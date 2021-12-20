@@ -7,7 +7,7 @@ using System.Web.UI.WebControls;
 
 namespace ITP247
 {
-    public partial class _Help : Page
+    public partial class Default : System.Web.UI.Page
     {
         protected void Page_Load(object sender, EventArgs e)
         {

@@ -10,8 +10,7 @@
 
 namespace ITP247
 {
-    public partial class _Help
+    public partial class Default
     {
-
     }
 }
