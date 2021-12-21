@@ -3,31 +3,23 @@
     <p>
         <table class="nav-justified">
             <tr>
-                <td>&nbsp;</td>
+                <td class="text-center" style="font-size: xx-large"><strong>PMTP Raporlar</strong></td>
                 <td>&nbsp;</td>
             </tr>
             <tr>
                 <td>
-                    <asp:Button ID="Button1" runat="server" Text="Bölüme Göre Personel Listesi" />
-                    <asp:Button ID="Button2" runat="server" Text="Personele Göre Maaş Listesi" />
+                    <asp:Button ID="Button1" runat="server" class="btn btn-success" Text="Bölüme Göre Personel Listesi" style="font-size: small" />
+                    <asp:Button ID="Button2" runat="server" class="btn btn-success" Text="Personele Göre Maaş Listesi" style="font-size: small" />
                 </td>
                 <td>&nbsp;</td>
             </tr>
             <tr>
                 <td>
-                    <asp:Button ID="Button3" runat="server" Text="Personele Göre Yıllık Maaş Grafiği" />
-                    <asp:Button ID="Button4" runat="server" Text="Personel İletişim Raporu" />
+                    <asp:Button ID="Button3" runat="server" class="btn btn-success" Text="Personele Göre Yıllık Maaş Grafiği" style="font-size: small" />
+                    <asp:Button ID="Button4" runat="server" class="btn btn-success" Text="Personel İletişim Raporu" style="font-size: small" />
                 </td>
-                <td>&nbsp;</td>
-            </tr>
-            <tr>
-                <td>&nbsp;</td>
-                <td>&nbsp;</td>
-            </tr>
-            <tr>
-                <td>&nbsp;</td>
                 <td>&nbsp;</td>
             </tr>
         </table>
-        Raporlar</p>
+   </p>
 </asp:Content>
