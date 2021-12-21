@@ -50,9 +50,9 @@
                 </div>
                 <div class="navbar-collapse collapse">
                     <ul class="nav navbar-nav">
-                        <li><a runat="server" href="~/Home">Ana Sayfa</a></li>
-                        <li><a runat="server" href="~/Forms.aspx">Formlar</a></li>
-                        <li><a runat="server" href="~/Reports.aspx">Raporlar</a></li>
+                        <li><a runat="server" href="~/Default.aspx">Ana Sayfa</a></li>
+                        <li><a runat="server" href="~/Formlar.aspx">Formlar</a></li>
+                        <li><a runat="server" href="~/Raporlar.aspx">Raporlar</a></li>
                         <li><a runat="server" href="~/About.aspx">Hakkında</a></li>
                         <li><a runat="server" href="~/Contact.aspx">İletişim</a></li>
                         <li><a runat="server" href="~/Help.aspx">Yardım</a></li>
