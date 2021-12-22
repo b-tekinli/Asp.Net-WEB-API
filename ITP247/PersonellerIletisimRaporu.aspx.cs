@@ -7,7 +7,7 @@ using System.Web.UI.WebControls;
 
 namespace ITP247
 {
-    public partial class PersoneleGoreMaasListesi : System.Web.UI.Page
+    public partial class PersonellerIletisimRaporu : System.Web.UI.Page
     {
         protected void Page_Load(object sender, EventArgs e)
         {
