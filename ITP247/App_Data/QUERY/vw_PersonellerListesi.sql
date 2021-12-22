@@ -1,9 +1,7 @@
-﻿CREATE VIEW [dbo].[vw_PersonellerListesi]
-AS
-SELECT        dbo.tbl_Personeller.Pers_ID, dbo.tbl_Personeller.Pers_Adi, dbo.tbl_Personeller.Pers_Soyadi, dbo.tbl_Personeller.Pers_Isim, dbo.tbl_Personeller.Pers_DTarihi, dbo.tbl_Personeller.Pers_Ise_Giris_Tarihi, 
-                         dbo.tbl_Personeller.Pers_Isten_Cikis_Tarihi, dbo.tbl_Personeller.Pers_Cep, dbo.tbl_Personeller.Pers_Email, dbo.tbl_Personeller.Pers_Aktif_Mi, dbo.tbl_Bolumler.Bolum_ID, dbo.tbl_Bolumler.Bolum_Adi, 
-                         dbo.tbl_Kategoriler.Unvan
-FROM            dbo.tbl_Bolumler INNER JOIN
-                         dbo.tbl_Personeller ON dbo.tbl_Bolumler.Bolum_ID = dbo.tbl_Personeller.Bolum_ID INNER JOIN
-                         dbo.tbl_Kategoriler ON dbo.tbl_Personeller.Unvan_ID = dbo.tbl_Kategoriler.Kategori_ID
-GO
+﻿INSERT INTO [vw_PersonellerListesi] ([Pers_ID], [Pers_Adi], [Pers_Soyadi], [Pers_DTarihi], [Pers_Ise_Giris_Tarihi], [Pers_Isten_Cikis_Tarihi], [Pers_Cep], [Pers_Email], [Pers_Aktif_Mi], [Bolum_ID], [Bolum_Adi], [Unvan]) VALUES (8, N'Mahsum', N'Esmeray', N'2021-05-12 00:00:00', N'2020-08-15 00:00:00', N'1900-01-01 00:00:00', N'5421244546', N'mahs@gmail.com', 1, 8, N'Satis', N'VT Yoneticisi')
+INSERT INTO [vw_PersonellerListesi] ([Pers_ID], [Pers_Adi], [Pers_Soyadi], [Pers_DTarihi], [Pers_Ise_Giris_Tarihi], [Pers_Isten_Cikis_Tarihi], [Pers_Cep], [Pers_Email], [Pers_Aktif_Mi], [Bolum_ID], [Bolum_Adi], [Unvan]) VALUES (1, N'Melike', N'Sen', N'2002-07-02 00:00:00', N'2020-11-11 00:00:00', N'1900-01-01 00:00:00', N'12345678910', N'melike@gmail.com', 1, 7, N'İmalat', N'Satis Elemani')
+INSERT INTO [vw_PersonellerListesi] ([Pers_ID], [Pers_Adi], [Pers_Soyadi], [Pers_DTarihi], [Pers_Ise_Giris_Tarihi], [Pers_Isten_Cikis_Tarihi], [Pers_Cep], [Pers_Email], [Pers_Aktif_Mi], [Bolum_ID], [Bolum_Adi], [Unvan]) VALUES (2, N'Ahmet', N'Tekin', N'1970-08-10 00:00:00', N'2000-01-09 00:00:00', N'1900-01-01 00:00:00', N'01234567899', N'ahmet@gmail.com', 2, 6, N'Satis', N'VT Yoneticisi')
+INSERT INTO [vw_PersonellerListesi] ([Pers_ID], [Pers_Adi], [Pers_Soyadi], [Pers_DTarihi], [Pers_Ise_Giris_Tarihi], [Pers_Isten_Cikis_Tarihi], [Pers_Cep], [Pers_Email], [Pers_Aktif_Mi], [Bolum_ID], [Bolum_Adi], [Unvan]) VALUES (3, N'Selen', N'Ak', N'2000-09-12 00:00:00', N'2020-05-07 00:00:00', N'1900-01-01 00:00:00', N'45674125745', N'selen@gmail.com', 3, 5, N'İmalat', N'VT Yoneticisi')
+INSERT INTO [vw_PersonellerListesi] ([Pers_ID], [Pers_Adi], [Pers_Soyadi], [Pers_DTarihi], [Pers_Ise_Giris_Tarihi], [Pers_Isten_Cikis_Tarihi], [Pers_Cep], [Pers_Email], [Pers_Aktif_Mi], [Bolum_ID], [Bolum_Adi], [Unvan]) VALUES (4, N'Buse', N'Yilmaz', N'1999-12-12 00:00:00', N'2020-03-12 00:00:00', N'1900-01-01 00:00:00', N'78945612332', N'buse@gmail.com', 4, 2,  N'Satis', N'Satis Elemani')
+INSERT INTO [vw_PersonellerListesi] ([Pers_ID], [Pers_Adi], [Pers_Soyadi], [Pers_DTarihi], [Pers_Ise_Giris_Tarihi], [Pers_Isten_Cikis_Tarihi], [Pers_Cep], [Pers_Email], [Pers_Aktif_Mi], [Bolum_ID], [Bolum_Adi], [Unvan]) VALUES (5, N'Aleyna', N'Öz', N'2000-11-05 00:00:00', N'2020-04-02 00:00:00', N'1900-01-01 00:00:00', N'12312312345', N'aleyna@gmail.com', 5, 1, N'Satis', N'VT Yoneticisi')
+

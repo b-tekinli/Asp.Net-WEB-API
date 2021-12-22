@@ -21,7 +21,10 @@
                 <td class="auto-style2" style="color: forestgreen;" colspan="2"><strong>Bölümlere Göre Personel Listesi Raporu</strong></td>
             </tr>
             <tr>
-                <td>&nbsp;</td>
+                <td>Bölüm Adı:
+                    <asp:DropDownList ID="DropDownList1" runat="server" AutoPostBack="True" DataSourceID="SqlDataSource2" DataTextField="Bolum_Adi" DataValueField="Bolum_ID" Height="16px" Width="145px">
+                    </asp:DropDownList>
+                </td>
                 <td>&nbsp;</td>
             </tr>
             <tr>
@@ -47,12 +50,18 @@
                 <td>&nbsp;</td>
             </tr>
             <tr>
-                <td>&nbsp;</td>
+                <td>
+                    <asp:SqlDataSource ID="SqlDataSource2" runat="server" ConnectionString="<%$ ConnectionStrings:con_PMTP %>" SelectCommand="SELECT [Bolum_ID], [Bolum_Adi] FROM [tbl_Bolumler]"></asp:SqlDataSource>
+                </td>
                 <td>&nbsp;</td>
             </tr>
             <tr>
                 <td>
-                    <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:con_PMTP %>" SelectCommand="SELECT * FROM [vw_PersonellerListesi]"></asp:SqlDataSource>
+                    <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:con_PMTP %>" SelectCommand="SELECT * FROM [vw_PersonellerListesi] WHERE Bolum_ID = @Bolum_ID">
+                        <SelectParameters>
+                            <asp:ControlParameter ControlID="DropDownList1" Name="Bolum_ID" PropertyName="SelectedValue" />
+                        </SelectParameters>
+                    </asp:SqlDataSource>
                 </td>
                 <td>&nbsp;</td>
             </tr>

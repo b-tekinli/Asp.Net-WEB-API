@@ -133,6 +133,7 @@
     <Content Include="Content\bootstrap-theme.css.map" />
     <None Include="Scripts\jquery-3.4.1.intellisense.js" />
     <Content Include="Images\Personeller.jpg" />
+    <Content Include="Images\personnel-icon.png" />
     <Content Include="PersoneleGoreMaasListesi.aspx" />
     <Content Include="Raporlar.aspx" />
     <Content Include="Scripts\bootstrap.js" />
