@@ -11,7 +11,7 @@ namespace ITP247
 {
 
 
-    public partial class BolumlereGorePersonelListesi
+    public partial class BolumlereGorePersonelListesiRaporu
     {
 
         /// <summary>

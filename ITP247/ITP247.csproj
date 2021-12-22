@@ -110,7 +110,7 @@
     <Content Include="App_Data\db_PMTP_log.ldf">
       <DependentUpon>db_PMTP.mdf</DependentUpon>
     </Content>
-    <Content Include="BolumlereGorePersonelListesi.aspx" />
+    <Content Include="BolumlereGorePersonelListesiRaporu.aspx" />
     <Content Include="Contact.aspx" />
     <Content Include="Content\bootstrap-theme.css" />
     <Content Include="Content\bootstrap-theme.min.css" />
@@ -133,6 +133,7 @@
     <Content Include="Content\bootstrap-theme.css.map" />
     <None Include="Scripts\jquery-3.4.1.intellisense.js" />
     <Content Include="Images\Personeller.jpg" />
+    <Content Include="PersoneleGoreMaasListesi.aspx" />
     <Content Include="Raporlar.aspx" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
@@ -164,7 +165,6 @@
     <Content Include="Scripts\WebForms\WebUIValidation.js" />
     <Content Include="Site.Master" />
     <Content Include="ViewSwitcher.ascx" />
-    <Content Include="vw_PersonellerListesi.aspx" />
     <Content Include="Web.config" />
     <Content Include="Bundle.config" />
     <Content Include="Site.Mobile.Master" />
@@ -179,12 +179,12 @@
       <DependentUpon>About.aspx</DependentUpon>
     </Compile>
     <Compile Include="App_Start\RouteConfig.cs" />
-    <Compile Include="BolumlereGorePersonelListesi.aspx.cs">
-      <DependentUpon>BolumlereGorePersonelListesi.aspx</DependentUpon>
+    <Compile Include="BolumlereGorePersonelListesiRaporu.aspx.cs">
+      <DependentUpon>BolumlereGorePersonelListesiRaporu.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="BolumlereGorePersonelListesi.aspx.designer.cs">
-      <DependentUpon>BolumlereGorePersonelListesi.aspx</DependentUpon>
+    <Compile Include="BolumlereGorePersonelListesiRaporu.aspx.designer.cs">
+      <DependentUpon>BolumlereGorePersonelListesiRaporu.aspx</DependentUpon>
     </Compile>
     <Compile Include="Contact.aspx.cs">
       <DependentUpon>Contact.aspx</DependentUpon>
@@ -217,6 +217,13 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="PersoneleGoreMaasListesi.aspx.cs">
+      <DependentUpon>PersoneleGoreMaasListesi.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PersoneleGoreMaasListesi.aspx.designer.cs">
+      <DependentUpon>PersoneleGoreMaasListesi.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Raporlar.aspx.cs">
       <DependentUpon>Raporlar.aspx</DependentUpon>
@@ -245,13 +252,6 @@
     </Compile>
     <Compile Include="ViewSwitcher.ascx.designer.cs">
       <DependentUpon>ViewSwitcher.ascx</DependentUpon>
-    </Compile>
-    <Compile Include="vw_PersonellerListesi.aspx.cs">
-      <DependentUpon>vw_PersonellerListesi.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="vw_PersonellerListesi.aspx.designer.cs">
-      <DependentUpon>vw_PersonellerListesi.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup />
