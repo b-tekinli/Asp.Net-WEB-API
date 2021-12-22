@@ -1,6 +1,7 @@
 ﻿SET IDENTITY_INSERT [dbo].[tbl_Bolumler] ON
-INSERT INTO [dbo].[tbl_Bolumler] ([Bolum_ID], [Bolum_Adi], [Bolum_Tel], [Mudur_ID]) VALUES (2, N'Bilisim', N'5321522332', 1)
-INSERT INTO [dbo].[tbl_Bolumler] ([Bolum_ID], [Bolum_Adi], [Bolum_Tel], [Mudur_ID]) VALUES (3, N'Veritabani', N'5214147487', 2)
-INSERT INTO [dbo].[tbl_Bolumler] ([Bolum_ID], [Bolum_Adi], [Bolum_Tel], [Mudur_ID]) VALUES (4, N'Raporlama', N'5321231212', 3)
-INSERT INTO [dbo].[tbl_Bolumler] ([Bolum_ID], [Bolum_Adi], [Bolum_Tel], [Mudur_ID]) VALUES (5, N'Admin', N'5354121202', 4)
+INSERT INTO [dbo].[tbl_Bolumler] ([Bolum_ID], [Bolum_Adi], [Bolum_Tel], [Mudur_ID]) VALUES (6, N'Bilisim Sistemi', N'111', 5)
+INSERT INTO [dbo].[tbl_Bolumler] ([Bolum_ID], [Bolum_Adi], [Bolum_Tel], [Mudur_ID]) VALUES (7, N'Pazarlama', N'113', 1)
+INSERT INTO [dbo].[tbl_Bolumler] ([Bolum_ID], [Bolum_Adi], [Bolum_Tel], [Mudur_ID]) VALUES (8, N'Satis', N'114', 1)
+INSERT INTO [dbo].[tbl_Bolumler] ([Bolum_ID], [Bolum_Adi], [Bolum_Tel], [Mudur_ID]) VALUES (9, N'Muhasebe', N'115', 2)
+INSERT INTO [dbo].[tbl_Bolumler] ([Bolum_ID], [Bolum_Adi], [Bolum_Tel], [Mudur_ID]) VALUES (10, N'Finans', N'115', 4)
 SET IDENTITY_INSERT [dbo].[tbl_Bolumler] OFF
