@@ -135,7 +135,7 @@
     <None Include="Scripts\jquery-3.4.1.intellisense.js" />
     <Content Include="Images\Personeller.jpg" />
     <Content Include="Images\personnel-icon.png" />
-    <Content Include="PersoneleGoreYillikMaasRaporu.aspx" />
+    <Content Include="PersoneleGoreYillikMaasGrafikRaporu.aspx" />
     <Content Include="PersonellerIletisimRaporu.aspx" />
     <Content Include="Raporlar.aspx" />
     <Content Include="Scripts\bootstrap.js" />
@@ -220,12 +220,12 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
-    <Compile Include="PersoneleGoreYillikMaasRaporu.aspx.cs">
-      <DependentUpon>PersoneleGoreYillikMaasRaporu.aspx</DependentUpon>
+    <Compile Include="PersoneleGoreYillikMaasGrafikRaporu.aspx.cs">
+      <DependentUpon>PersoneleGoreYillikMaasGrafikRaporu.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="PersoneleGoreYillikMaasRaporu.aspx.designer.cs">
-      <DependentUpon>PersoneleGoreYillikMaasRaporu.aspx</DependentUpon>
+    <Compile Include="PersoneleGoreYillikMaasGrafikRaporu.aspx.designer.cs">
+      <DependentUpon>PersoneleGoreYillikMaasGrafikRaporu.aspx</DependentUpon>
     </Compile>
     <Compile Include="PersonellerIletisimRaporu.aspx.cs">
       <DependentUpon>PersonellerIletisimRaporu.aspx</DependentUpon>
