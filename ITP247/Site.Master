@@ -63,8 +63,10 @@
             <asp:ContentPlaceHolder ID="MainContent" runat="server">
             </asp:ContentPlaceHolder>
             <hr />
-            <footer>
-                <p>&copy; <%: DateTime.Now.Year %> - My ASP.NET Application</p>
+            <footer style="display: flex; justify-content: space-around;">
+                <p><b>Sürüm (Version): </b> <span style="color: orange;">1.0</span></p>
+                <p><b>Tasarım ve Copyright &copy; <%: DateTime.Now.Year %>:</b> <span style="color: orange;">Beyzanur TEKİNLİ</span></p>
+                <p style="cursor: pointer;"><b>Email: </b><span style="color: deepskyblue;">beyza.tekinli.bt@gmail.com</span></p>
             </footer>
         </div>
 

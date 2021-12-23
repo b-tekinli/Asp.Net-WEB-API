@@ -10,7 +10,7 @@
             width: 100%;
         }
         .auto-style2 {
-            font-size: x-large;
+            font-size: xx-large;
         }
     </style>
 </head>
@@ -30,7 +30,7 @@
             <td>
                 <asp:Repeater ID="Repeater1" runat="server" DataSourceID="SqlDataSource1">
                     <HeaderTemplate>
-                        <tr style="background-color: springgreen; color: white;">
+                        <tr style="background-color: lavender;">
                             <td>ID</td>
                             <td>İsim</td>
                             <td>Tel</td>
