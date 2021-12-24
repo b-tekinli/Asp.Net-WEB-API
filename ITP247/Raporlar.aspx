@@ -9,13 +9,13 @@
             <tr>
                 <td class="text-left" style="height: 38px; width: 1032px; display: flex; justify-content: center; margin-top: 30px;">
                     <asp:Button ID="Button1" runat="server" class="btn btn-success" Text="Bölüme Göre Personel Listesi" style="font-size: large; width: 250px; margin-right: 125px;" OnClientClick="target='_blank';" PostBackUrl="~/BolumlereGorePersonelListesiRaporu.aspx" />
-                    <asp:Button ID="Button2" runat="server" class="btn btn-success" Text="Personele Göre Maaş Listesi" style="font-size: large; width: 250px;" />
+                    <asp:Button ID="Button2" runat="server" class="btn btn-success" Text="Personele Göre Maaş Listesi" style="font-size: large; width: 250px;" OnClientClick="target='_blank';" PostBackUrl="~/PersoneleGoreMaaslarRaporu.aspx" />
                 </td>
                 <td>&nbsp;</td>
             </tr>
             <tr>
                 <td class="text-left" style="height: 38px; width: 1032px; display: flex; justify-content: center; margin-top: 15px;">
-                    <asp:Button ID="Button3" runat="server" class="btn btn-success" Text="Personele Göre Yıllık Maaş Grafiği" style="font-size: large; width: 250px; margin-right: 125px;" OnClientClick="target='_blank';" PostBackUrl="~/PersoneleGoreYillikMaasRaporu.aspx" />
+                    <asp:Button ID="Button3" runat="server" class="btn btn-success" Text="Personele Göre Yıllık Maaş Grafiği" style="font-size: large; width: 250px; margin-right: 125px;" OnClientClick="target='_blank';" PostBackUrl="~/PersoneleGoreYillikMaasGrafikRaporu.aspx" />
                     <asp:Button ID="Button4" runat="server" class="btn btn-success" Text="Personel İletişim Raporu" style="font-size: large; width: 250px;" OnClientClick="target='_blank';" PostBackUrl="~/PersonellerIletisimRaporu.aspx" />
                 </td>
                 <td>&nbsp;</td>

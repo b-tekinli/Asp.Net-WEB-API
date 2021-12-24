@@ -111,6 +111,7 @@
     <Content Include="App_Data\db_PMTP_log.ldf">
       <DependentUpon>db_PMTP.mdf</DependentUpon>
     </Content>
+    <Content Include="PersoneleGoreMaaslarRaporu.aspx" />
     <Content Include="BolumlereGorePersonelListesiRaporu.aspx" />
     <Content Include="Contact.aspx" />
     <Content Include="Content\bootstrap-theme.css" />
@@ -182,6 +183,13 @@
       <DependentUpon>About.aspx</DependentUpon>
     </Compile>
     <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="PersoneleGoreMaaslarRaporu.aspx.cs">
+      <DependentUpon>PersoneleGoreMaaslarRaporu.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PersoneleGoreMaaslarRaporu.aspx.designer.cs">
+      <DependentUpon>PersoneleGoreMaaslarRaporu.aspx</DependentUpon>
+    </Compile>
     <Compile Include="BolumlereGorePersonelListesiRaporu.aspx.cs">
       <DependentUpon>BolumlereGorePersonelListesiRaporu.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
