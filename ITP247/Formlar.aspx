@@ -8,7 +8,7 @@
             </tr>
             <tr>
                 <td class="text-left" style="height: 38px; width: 1111px; display: flex; justify-content: center; margin-top: 30px;">
-                    <asp:Button ID="Button1" runat="server" class="btn btn-success" Text="Personel Veri Giriş Formu" style="font-size: large; width: 250px; margin-right: 150px;" />
+                    <asp:Button ID="Button1" runat="server" class="btn btn-success" Text="Personel Veri Giriş Formu" style="font-size: large; width: 250px; margin-right: 150px;" OnClientClick="target='_blank';" PostBackUrl="~/PersonelVeriGirisFormu.aspx" />
                     <asp:Button ID="Button2" runat="server" class="btn btn-success" Text="Maaş Veri Girişi Formu" style="font-size: large; width: 250px;" />
                 </td>
                 <td class="text-justify" style="height: 38px"></td>

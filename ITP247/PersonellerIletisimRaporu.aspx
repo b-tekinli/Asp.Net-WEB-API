@@ -11,6 +11,7 @@
         }
         .auto-style2 {
             font-size: xx-large;
+            text-align: center;
         }
     </style>
 </head>
@@ -20,7 +21,7 @@
         </div>
     <table class="auto-style1">
         <tr>
-            <td class="auto-style2" style="color: forestgreen;" colspan="2"><strong>Personel İletişim Raporu</strong></td>
+            <td class="auto-style2" style="color: forestgreen;" colspan="2"><strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Personel İletişim Raporu</strong></td>
         </tr>
         <tr>
             <td>&nbsp;</td>
