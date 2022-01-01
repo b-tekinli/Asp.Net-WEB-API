@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="PersonellerIletisimRaporu.aspx.cs" Inherits="ITP247.PersonellerIletisimRaporu" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeFile="PersonellerIletisimRaporu.aspx.cs" Inherits="ITP247.PersonellerIletisimRaporu" %>
 
 <!DOCTYPE html>
 
@@ -46,12 +46,12 @@
                     <ItemTemplate>
                         <tr style="background-color: lightgrey;">
                             <td><%# Eval("Pers_ID")%></td>
-                            <td><%# Eval("Pers_İsim")%></td>
+                            <td><%# Eval("Pers_Isim")%></td>
                             <td><%# Eval("Pers_Tel")%></td>
                             <td><%# Eval("Pers_Cep")%></td>
                             <td><%# Eval("Pers_Email")%></td>
-                            <td><%# Eval("Pers_Bölüm")%></td>
-                            <td><%# Eval("Pers_Ünvan")%></td>
+                            <td><%# Eval("Bolum")%></td>
+                            <td><%# Eval("Unvan")%></td>
                         </tr>
                     </ItemTemplate>
 
@@ -59,12 +59,12 @@
                     <AlternatingItemTemplate>
                         <tr style="background-color: lightgrey;">
                             <td><%# Eval("Pers_ID")%></td>
-                            <td><%# Eval("Pers_İsim")%></td>
+                            <td><%# Eval("Pers_Isim")%></td>
                             <td><%# Eval("Pers_Tel")%></td>
                             <td><%# Eval("Pers_Cep")%></td>
                             <td><%# Eval("Pers_Email")%></td>
-                            <td><%# Eval("Pers_Bölüm")%></td>
-                            <td><%# Eval("Pers_Ünvan")%></td>
+                            <td><%# Eval("Bolum")%></td>
+                            <td><%# Eval("Unvan")%></td>
                         </tr>
                     </AlternatingItemTemplate>
                 </asp:Repeater>
