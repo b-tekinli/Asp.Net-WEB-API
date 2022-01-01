@@ -128,10 +128,10 @@
                 <td class="auto-style3">
                     &nbsp;</td>
                 <td>
-                    <asp:Button ID="Button2" runat="server" BackColor="#339966" Font-Bold="True" Font-Size="X-Large" ForeColor="White" Height="36px" OnClick="Button2_Click" Text="Verileri Sakla" Width="174px" />
+                    <asp:Button ID="Button2" runat="server" BackColor="#339966" Font-Bold="True" Font-Size="X-Large" ForeColor="White" Height="36px" OnClick="Button2_Click" Text="Verileri Sakla" Width="174px" style="cursor: pointer;" />
                 </td>
                 <td>
-                    <asp:Button ID="Button1" runat="server" BackColor="#CC3300" Font-Bold="True" Font-Size="X-Large" ForeColor="White" Height="37px" OnClientClick="window.close();" Text="Formu Kapat" Width="168px" />
+                    <asp:Button ID="Button1" runat="server" BackColor="#CC3300" Font-Bold="True" Font-Size="X-Large" ForeColor="White" Height="37px" OnClientClick="window.close();" Text="Formu Kapat" Width="168px" style="cursor: pointer;"/>
                 </td>
                 <td>
                     &nbsp;</td>
