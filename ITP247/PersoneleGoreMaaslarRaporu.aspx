@@ -31,13 +31,13 @@
                 <td>
                     <asp:GridView ID="GridView1" runat="server" AllowPaging="True" AllowSorting="True" AutoGenerateColumns="False" DataSourceID="SqlDataSource1" DataKeyNames="Expr2">
                         <Columns>
-                            <asp:BoundField DataField="Expr2" HeaderText="Expr2" ReadOnly="True" SortExpression="Expr2" />
+                            <asp:BoundField DataField="Pers_ID" HeaderText="Pers_ID" ReadOnly="True" SortExpression="Pers_ID" />
                             <asp:BoundField DataField="Pers_Isim" HeaderText="Pers_Isim" ReadOnly="True" SortExpression="Pers_Isim" />
                             <asp:BoundField DataField="Unvan" HeaderText="Unvan" SortExpression="Unvan" />
                             <asp:BoundField DataField="Maas_Yili" HeaderText="Maas_Yili" ReadOnly="True" SortExpression="Maas_Yili" />
                             <asp:BoundField DataField="Maas_Tutari" HeaderText="Maas_Tutari" SortExpression="Maas_Tutari" />
                             <asp:BoundField DataField="Maas_Komisyon" HeaderText="Maas_Komisyon" SortExpression="Maas_Komisyon" />
-                            <asp:BoundField DataField="MaasToplam" HeaderText="MaasToplam" ReadOnly="True" SortExpression="MaasToplam" />
+                            <asp:BoundField DataField="Maas_Toplam" HeaderText="Maas_Toplam" ReadOnly="True" SortExpression="Maas_Toplam" />
                             <asp:BoundField DataField="Ay_Adi" HeaderText="Ay_Adi" SortExpression="Ay_Adi" />
                         </Columns>
                     </asp:GridView>
@@ -52,7 +52,7 @@
             </tr>
             <tr>
                 <td>
-                    <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:con_PMTP %>" SelectCommand="SELECT Pers_ID AS Expr2, Pers_Isim, Unvan, Maas_Yili, Maas_Tutari, Maas_Komisyon, MaasToplam, Ay_Adi FROM vw_PersonelAylikMaaslari WHERE (Pers_ID = @Pers_ID)">
+                    <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:con_PMTP %>" SelectCommand="SELECT Pers_ID, Pers_Isim, Unvan, Maas_Yili, Maas_Tutari, Maas_Komisyon, Maas_Toplam, Ay_Adi FROM vw_PersonelAylikMaaslari WHERE (Pers_ID = @Pers_ID)">
                         <SelectParameters>
                             <asp:ControlParameter ControlID="DropDownList1" Name="Pers_ID" PropertyName="SelectedValue" />
                         </SelectParameters>
