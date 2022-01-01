@@ -11,8 +11,7 @@
         }
         .auto-style2 {
             font-size: xx-large;
-            text-align: center;
-        }
+            }
     </style>
 </head>
 <body>
