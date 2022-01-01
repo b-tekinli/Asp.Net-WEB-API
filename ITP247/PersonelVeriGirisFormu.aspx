@@ -30,6 +30,10 @@
         .auto-style7 {
             height: 26px;
         }
+        .auto-style8 {
+            width: 100%;
+            height: 375px;
+        }
     </style>
 </head>
 <body>
@@ -41,7 +45,7 @@
                 </tr>
             </table>
         </div>
-        <table class="auto-style1">
+        <table class="auto-style8">
             <tr>
                 <td class="auto-style3">Adı:</td>
                 <td>
@@ -93,16 +97,21 @@
                 <td>
                     <asp:TextBox ID="TextBox5" runat="server"></asp:TextBox>
                 </td>
-                <td>&nbsp;</td>
-                <td>&nbsp;</td>
+                <td>Email:</td>
+                <td>
+                    <asp:TextBox ID="TextBox7" runat="server" TextMode="Date"></asp:TextBox>
+                </td>
             </tr>
             <tr>
                 <td class="auto-style3">Adresi:</td>
                 <td>
                     <asp:TextBox ID="TextBox6" runat="server" Height="16px" Width="359px"></asp:TextBox>
                 </td>
-                <td>&nbsp;</td>
-                <td>&nbsp;</td>
+                <td>Kent:</td>
+                <td>
+                    <asp:DropDownList ID="DropDownList5" runat="server" DataSourceID="SqlDataSource1" DataTextField="Pers_Kenti" DataValueField="Pers_ID">
+                    </asp:DropDownList>
+                </td>
             </tr>
             <tr>
                 <td class="auto-style6">İlçesi:</td>
@@ -112,7 +121,7 @@
                 </td>
                 <td class="auto-style7">İl:</td>
                 <td class="auto-style7">
-                    <asp:DropDownList ID="DropDownList4" runat="server" DataSourceID="SqlDataSource3" DataTextField="Bolum_Adi" DataValueField="Bolum_ID">
+                    <asp:DropDownList ID="DropDownList4" runat="server" DataSourceID="SqlDataSource1" DataTextField="Pers_Kenti" DataValueField="Pers_ID">
                     </asp:DropDownList>
                 </td>
             </tr>
@@ -138,12 +147,31 @@
             </tr>
             <tr>
                 <td class="auto-style3">
-                    <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:con_PMTP %>" SelectCommand="SELECT [Pers_ID], [Pers_Kenti] FROM [tbl_Personeller]"></asp:SqlDataSource>
+                    <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:con_PMTP %>" SelectCommand="SELECT [Pers_ID], [Pers_Kenti] FROM [tbl_Personeller]" InsertCommand="INSERT INTO tbl_Personeller(Pers_Adi, Pers_Soyadi, Cinsiyet_ID, Unvan_ID, Pers_DTarihi, Pers_Ise_Giris_Tarihi, Pers_Cep, Bolum_ID, Pers_Email, Pers_Adresi, Pers_Kenti, Pers_Ili, Pers_Aktif_Mİ) VALUES (@Pers_Adi, @Pers_Soyadi, @Cinsiyet_ID, @Unvan_ID, @Pers_DTarihi, @Pers_Ise_Giris_Tarihi, @Pers_Cep, @Bolum_ID, @Pers_Email, @Pers_Adresi, @Pers_Kenti, @Pers_lli, @Pers_Aktif_Mi)">
+                        <InsertParameters>
+                            <asp:Parameter Name="Pers_Adi" />
+                            <asp:Parameter Name="Pers_Soyadi" />
+                            <asp:Parameter Name="Cinsiyet_ID" />
+                            <asp:Parameter Name="Unvan_ID" />
+                            <asp:Parameter Name="Pers_DTarihi" />
+                            <asp:Parameter Name="Pers_Ise_Giris_Tarihi" />
+                            <asp:Parameter Name="Pers_Cep" />
+                            <asp:Parameter Name="Bolum_ID" />
+                            <asp:Parameter Name="Pers_Email" />
+                            <asp:Parameter Name="Pers_Adresi" />
+                            <asp:Parameter Name="Pers_Kenti" />
+                            <asp:Parameter Name="Pers_lli" />
+                            <asp:Parameter Name="Pers_Aktif_Mi" />
+                        </InsertParameters>
+                    </asp:SqlDataSource>
                 </td>
                 <td>
                     <asp:SqlDataSource ID="SqlDataSource2" runat="server" ConnectionString="<%$ ConnectionStrings:con_PMTP %>" SelectCommand="SELECT [Unvan], [Kategori_ID] FROM [tbl_Kategoriler]"></asp:SqlDataSource>
                 </td>
-                <td>&nbsp;</td>
+                <td>
+                    <asp:Label ID="Label3" runat="server" ForeColor="#FF3300" Text="Label"></asp:Label>
+                    <asp:TextBox ID="TextBox8" runat="server"></asp:TextBox>
+                </td>
                 <td>
                     <asp:SqlDataSource ID="SqlDataSource3" runat="server" ConnectionString="<%$ ConnectionStrings:con_PMTP %>" SelectCommand="SELECT [Bolum_ID], [Bolum_Adi] FROM [tbl_Bolumler]"></asp:SqlDataSource>
                 </td>

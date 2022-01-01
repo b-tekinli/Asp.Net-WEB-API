@@ -15,14 +15,14 @@
             </tr>
             <tr>
                 <td style="height: 38px; width: 1111px; display: flex; justify-content: center; margin-top: 15px;">
-                    <asp:Button ID="Button3" runat="server" class="btn btn-success" Text="Personel Veri Güncelleme Formu" style="font-size: large; width: 250px; margin-right: 150px;" />
+                    <asp:Button ID="Button3" runat="server" class="btn btn-success" Text="Personel Veri Güncelleme Formu" style="font-size: large; width: 250px; margin-right: 150px;" OnClientClick="target='_blank';" PostBackUrl="~/PersonelVeriGuncellemeFormu.aspx" />
                     <asp:Button ID="Button4" runat="server" class="btn btn-success" Text="Maaş Veri Güncelleme Formu" style="font-size: large; width: 250px;" />
                 </td>
                 <td class="text-justify">&nbsp;</td>
             </tr>
             <tr>
                 <td style="height: 38px; width: 1111px; display: flex; justify-content: center; margin-top: 15px;">
-                    <asp:Button ID="Button5" runat="server" class="btn btn-success" Text="Personel Wizard Formu" style="font-size: large; width: 250px; margin-right: 150px;" />
+                    <asp:Button ID="Button5" runat="server" class="btn btn-success" Text="Personel Wizard Formu" style="font-size: large; width: 250px; margin-right: 150px;" OnClientClick="target='_blank';" PostBackUrl="~/PersonelVeriGirisWizard.aspx" />
                     <asp:Button ID="Button6" runat="server" class="btn btn-success" Text="Bölüm Veri Giriş Formu" style="font-size: large; width: 250px;" />
                 </td>
                 <td style="height: 32px" class="text-left">&nbsp;</td>
