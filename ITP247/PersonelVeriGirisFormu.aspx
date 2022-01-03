@@ -99,7 +99,7 @@
                 </td>
                 <td>Email:</td>
                 <td>
-                    <asp:TextBox ID="TextBox7" runat="server" TextMode="Date"></asp:TextBox>
+                    <asp:TextBox ID="TextBox7" runat="server"></asp:TextBox>
                 </td>
             </tr>
             <tr>
@@ -169,9 +169,7 @@
                     <asp:SqlDataSource ID="SqlDataSource2" runat="server" ConnectionString="<%$ ConnectionStrings:con_PMTP %>" SelectCommand="SELECT [Unvan], [Kategori_ID] FROM [tbl_Kategoriler]"></asp:SqlDataSource>
                 </td>
                 <td>
-                    <asp:Label ID="Label3" runat="server" ForeColor="#FF3300" Text="Label"></asp:Label>
-                    <asp:TextBox ID="TextBox8" runat="server"></asp:TextBox>
-                </td>
+                    &nbsp;</td>
                 <td>
                     <asp:SqlDataSource ID="SqlDataSource3" runat="server" ConnectionString="<%$ ConnectionStrings:con_PMTP %>" SelectCommand="SELECT [Bolum_ID], [Bolum_Adi] FROM [tbl_Bolumler]"></asp:SqlDataSource>
                 </td>
