@@ -111,6 +111,7 @@
     <Content Include="App_Data\db_PMTP_log.ldf">
       <DependentUpon>db_PMTP.mdf</DependentUpon>
     </Content>
+    <Content Include="BolumVeriGirisiFormu.aspx" />
     <Content Include="PersoneleGoreMaaslarRaporu.aspx" />
     <Content Include="BolumlereGorePersonelListesiRaporu.aspx" />
     <Content Include="Contact.aspx" />
@@ -186,6 +187,13 @@
       <DependentUpon>About.aspx</DependentUpon>
     </Compile>
     <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="BolumVeriGirisiFormu.aspx.cs">
+      <DependentUpon>BolumVeriGirisiFormu.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BolumVeriGirisiFormu.aspx.designer.cs">
+      <DependentUpon>BolumVeriGirisiFormu.aspx</DependentUpon>
+    </Compile>
     <Compile Include="PersoneleGoreMaaslarRaporu.aspx.cs">
       <DependentUpon>PersoneleGoreMaaslarRaporu.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>

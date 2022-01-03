@@ -12,7 +12,7 @@
         .auto-style2 {
             text-align: center;
             color: #339933;
-            font-size: larger;
+            font-size: xx-large;
         }
         .auto-style3 {
             width: 204px;
@@ -58,6 +58,7 @@
                             <asp:BoundField DataField="Pers_Email" HeaderText="Pers_Email" SortExpression="Pers_Email" />
                             <asp:BoundField DataField="Bolum_ID" HeaderText="Bolum_ID" SortExpression="Bolum_ID" />
                             <asp:BoundField DataField="Pers_Maas" HeaderText="Pers_Maas" SortExpression="Pers_Maas" />
+                            <asp:CommandField ShowDeleteButton="True" ShowEditButton="True" ShowInsertButton="True" />
                         </Fields>
                         <FooterStyle BackColor="#5D7B9D" Font-Bold="True" ForeColor="White" />
                         <HeaderStyle BackColor="#5D7B9D" Font-Bold="True" ForeColor="White" />
@@ -65,14 +66,6 @@
                         <RowStyle BackColor="#F7F6F3" ForeColor="#333333" />
                     </asp:DetailsView>
                 </td>
-            </tr>
-            <tr>
-                <td class="auto-style3">&nbsp;</td>
-                <td>&nbsp;</td>
-            </tr>
-            <tr>
-                <td class="auto-style3">&nbsp;</td>
-                <td>&nbsp;</td>
             </tr>
             <tr>
                 <td class="auto-style3">&nbsp;</td>
@@ -87,7 +80,7 @@
                         </DeleteParameters>
                         <InsertParameters>
                             <asp:Parameter Name="Pers_Adi" />
-                            <asp:Parameter />
+                            <asp:Parameter Name="Pers_Soyadi"/>
                             <asp:Parameter Name="Pers_DTarihi" />
                             <asp:Parameter Name="Pers_Ise_Giris_Tarihi" />
                             <asp:Parameter Name="Pers_Isten_Cikis_Tarihi" />
