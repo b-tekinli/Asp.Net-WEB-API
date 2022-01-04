@@ -16,7 +16,7 @@
             <tr>
                 <td style="height: 38px; width: 1111px; display: flex; justify-content: center; margin-top: 15px;">
                     <asp:Button ID="Button3" runat="server" class="btn btn-success" Text="Personel Veri Güncelleme Formu" style="font-size: large; width: 250px; margin-right: 150px;" OnClientClick="target='_blank';" PostBackUrl="~/PersonelVeriGuncellemeFormu.aspx" />
-                    <asp:Button ID="Button4" runat="server" class="btn btn-success" Text="Maaş Veri Güncelleme Formu" style="font-size: large; width: 250px;" OnClientClick="target='_blank';" />
+                    <asp:Button ID="Button4" runat="server" class="btn btn-success" Text="Maaş Veri Güncelleme Formu" style="font-size: large; width: 250px;" OnClientClick="target='_blank';" PostBackUrl="~/MaasVeriGuncellemeFormu.aspx" />
                 </td>
                 <td class="text-justify">&nbsp;</td>
             </tr>
