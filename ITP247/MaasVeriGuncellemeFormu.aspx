@@ -90,6 +90,7 @@
                     <asp:GridView ID="GridView2" runat="server" AllowPaging="True" AllowSorting="True" AutoGenerateColumns="False" CellPadding="4" DataKeyNames="Maas_ID" DataSourceID="SqlDataSource3" ForeColor="#333333" GridLines="None">
                         <AlternatingRowStyle BackColor="White" />
                         <Columns>
+                            <asp:CommandField ShowEditButton="True" />
                             <asp:BoundField DataField="Maas_ID" HeaderText="Maas_ID" InsertVisible="False" ReadOnly="True" SortExpression="Maas_ID" />
                             <asp:BoundField DataField="Pers_ID" HeaderText="Pers_ID" SortExpression="Pers_ID" />
                             <asp:BoundField DataField="Maas_Odeme_Tarihi" HeaderText="Maas_Odeme_Tarihi" SortExpression="Maas_Odeme_Tarihi" />
