@@ -80,7 +80,6 @@
                             <asp:BoundField DataField="Maas_Tutari" HeaderText="Maas_Tutari" SortExpression="Maas_Tutari" />
                             <asp:BoundField DataField="Maas_Komisyon" HeaderText="Maas_Komisyon" SortExpression="Maas_Komisyon" />
                             <asp:BoundField DataField="Ay_ID" HeaderText="Ay_ID" SortExpression="Ay_ID" />
-                            <asp:CommandField ShowEditButton="True" />
                         </Fields>
                         <FooterStyle BackColor="#1C5E55" Font-Bold="True" ForeColor="White" />
                         <HeaderStyle BackColor="#1C5E55" Font-Bold="True" ForeColor="White" />
@@ -90,13 +89,13 @@
                     <asp:GridView ID="GridView2" runat="server" AllowSorting="True" AutoGenerateColumns="False" CellPadding="4" DataKeyNames="Maas_ID" DataSourceID="SqlDataSource3" ForeColor="#333333" GridLines="None" CssClass="auto-style7" Height="91px" Width="483px">
                         <AlternatingRowStyle BackColor="White" />
                         <Columns>
-                            <asp:CommandField ShowEditButton="True" />
-                            <asp:BoundField DataField="Maas_ID" HeaderText="MaasID" InsertVisible="False" ReadOnly="True" SortExpression="Maas_ID" />
-                            <asp:BoundField DataField="Pers_ID" HeaderText="PersID" SortExpression="Pers_ID" ReadOnly="True"/>
-                            <asp:BoundField DataField="Maas_Odeme_Tarihi" HeaderText="Tarih" SortExpression="Maas_Odeme_Tarihi" />
-                            <asp:BoundField DataField="Maas_Tutari" HeaderText="Tutar" SortExpression="Maas_Tutari" />
-                            <asp:BoundField DataField="Maas_Komisyon" HeaderText="Komisyon" SortExpression="Maas_Komisyon" />
-                            <asp:BoundField DataField="Ay_ID" HeaderText="AyID" SortExpression="Ay_ID" />
+                            <asp:CommandField ShowDeleteButton="True" ShowEditButton="True" ShowSelectButton="True" />
+                            <asp:BoundField DataField="Maas_ID" HeaderText="Maas_ID" InsertVisible="False" ReadOnly="True" SortExpression="Maas_ID" />
+                            <asp:BoundField DataField="Pers_ID" HeaderText="Pers_ID" SortExpression="Pers_ID"/>
+                            <asp:BoundField DataField="Maas_Odeme_Tarihi" HeaderText="Maas_Odeme_Tarihi" SortExpression="Maas_Odeme_Tarihi" />
+                            <asp:BoundField DataField="Maas_Tutari" HeaderText="Maas_Tutari" SortExpression="Maas_Tutari" />
+                            <asp:BoundField DataField="Maas_Komisyon" HeaderText="Maas_Komisyon" SortExpression="Maas_Komisyon" />
+                            <asp:BoundField DataField="Ay_ID" HeaderText="Ay_ID" SortExpression="Ay_ID" />
                         </Columns>
                         <EditRowStyle BackColor="#7C6F57" />
                         <FooterStyle BackColor="#1C5E55" Font-Bold="True" ForeColor="White" />
@@ -136,16 +135,20 @@
         <div>
             <asp:SqlDataSource ID="SqlDataSource3" runat="server" ConnectionString="<%$ ConnectionStrings:con_PMTP %>" SelectCommand="SELECT [Maas_ID], [Pers_ID], [Maas_Odeme_Tarihi], [Maas_Tutari], [Maas_Komisyon], [Ay_ID] FROM [tbl_PersonelMaaslari] WHERE Pers_ID = @Pers_ID" UpdateCommand="UPDATE tbl_PersonelMaaslari
 SET Maas_Odeme_Tarihi = @Maas_Odeme_Tarihi, Maas_Tutari = @Maas_Tutari, Maas_Komisyon = @Maas_Komisyon, Ay_ID = @Ay_ID
-WHERE Pers_ID = @Pers_ID">
+WHERE Maas_ID = @Maas_ID" DeleteCommand="DELETE FROM tbl_PersonelMaaslari
+WHERE Maas_ID = @Maas_ID">
+                <DeleteParameters>
+                    <asp:Parameter Name="Maas_ID" />
+                </DeleteParameters>
                 <SelectParameters>
                     <asp:ControlParameter ControlID="GridView1" Name="Pers_ID" PropertyName="SelectedValue" />
                 </SelectParameters>
                 <UpdateParameters>
                     <asp:Parameter Name="Maas_Odeme_Tarihi" type="DateTime"/>
-                    <asp:Parameter Name="Maas_Komisyon" type="Decimal"/>
                     <asp:Parameter Name="Maas_Tutari" type="Decimal"/>
+                    <asp:Parameter Name="Maas_Komisyon" type="Decimal"/>
                     <asp:Parameter Name="Ay_ID" type="Int32"/>
-                    <asp:Parameter Name="Pers_ID" />
+                    <asp:Parameter Name="Maas_ID" />
                 </UpdateParameters>
             </asp:SqlDataSource>
         </div>
