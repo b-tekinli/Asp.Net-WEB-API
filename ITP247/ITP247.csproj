@@ -112,6 +112,7 @@
       <DependentUpon>db_PMTP.mdf</DependentUpon>
     </Content>
     <Content Include="BolumVeriGirisiFormu.aspx" />
+    <Content Include="MaasVeriGirisFormu.aspx" />
     <Content Include="MaasVeriGuncellemeFormu.aspx" />
     <Content Include="PersoneleGoreMaaslarRaporu.aspx" />
     <Content Include="BolumlereGorePersonelListesiRaporu.aspx" />
@@ -194,6 +195,13 @@
     </Compile>
     <Compile Include="BolumVeriGirisiFormu.aspx.designer.cs">
       <DependentUpon>BolumVeriGirisiFormu.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MaasVeriGirisFormu.aspx.cs">
+      <DependentUpon>MaasVeriGirisFormu.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MaasVeriGirisFormu.aspx.designer.cs">
+      <DependentUpon>MaasVeriGirisFormu.aspx</DependentUpon>
     </Compile>
     <Compile Include="MaasVeriGuncellemeFormu.aspx.cs">
       <DependentUpon>MaasVeriGuncellemeFormu.aspx</DependentUpon>
