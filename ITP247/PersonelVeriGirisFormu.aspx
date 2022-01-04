@@ -116,12 +116,12 @@
             <tr>
                 <td class="auto-style6">İlçesi:</td>
                 <td class="auto-style7">
-                    <asp:DropDownList ID="DropDownList3" runat="server" DataSourceID="SqlDataSource2" DataTextField="Unvan" DataValueField="Kategori_ID">
+                    <asp:DropDownList ID="DropDownList3" runat="server" DataSourceID="SqlDataSource4" DataTextField="Pers_Kenti" DataValueField="Pers_ID">
                     </asp:DropDownList>
                 </td>
                 <td class="auto-style7">İl:</td>
                 <td class="auto-style7">
-                    <asp:DropDownList ID="DropDownList4" runat="server" DataSourceID="SqlDataSource1" DataTextField="Pers_Kenti" DataValueField="Pers_ID">
+                    <asp:DropDownList ID="DropDownList4" runat="server" DataSourceID="SqlDataSource5" DataTextField="Pers_Ili" DataValueField="Pers_ID">
                     </asp:DropDownList>
                 </td>
             </tr>
@@ -135,15 +135,19 @@
             </tr>
             <tr>
                 <td class="auto-style3">
-                    &nbsp;</td>
+                    <asp:SqlDataSource ID="SqlDataSource4" runat="server" ConnectionString="<%$ ConnectionStrings:con_PMTP %>" SelectCommand="SELECT [Pers_Kenti], [Pers_ID] FROM [tbl_Personeller]"></asp:SqlDataSource>
+                </td>
                 <td>
                     <asp:Button ID="Button2" runat="server" BackColor="#339966" Font-Bold="True" Font-Size="X-Large" ForeColor="White" Height="36px" OnClick="Button2_Click" Text="Verileri Sakla" Width="174px" style="cursor: pointer;" />
+                    <asp:Label ID="Label3" runat="server" Text="Label"></asp:Label>
+                    <asp:TextBox ID="TextBox8" runat="server"></asp:TextBox>
                 </td>
                 <td>
                     <asp:Button ID="Button1" runat="server" BackColor="#CC3300" Font-Bold="True" Font-Size="X-Large" ForeColor="White" Height="37px" OnClientClick="window.close();" Text="Formu Kapat" Width="168px" style="cursor: pointer;"/>
                 </td>
                 <td>
-                    &nbsp;</td>
+                    <asp:SqlDataSource ID="SqlDataSource5" runat="server" ConnectionString="<%$ ConnectionStrings:con_PMTP %>" SelectCommand="SELECT [Pers_ID], [Pers_Ili] FROM [tbl_Personeller]"></asp:SqlDataSource>
+                </td>
             </tr>
             <tr>
                 <td class="auto-style3">

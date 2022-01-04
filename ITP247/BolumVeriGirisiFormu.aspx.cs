@@ -28,10 +28,20 @@ namespace ITP247
                 lbl1.Visible = true;
             }
             else
-            {
                 lbl1.Text = "Yeni Bölüm Kaydı Başarısız. Verilerinizi kontrol ettikten sonra tekrar deneyiniz.";
-            }
             lbl1.Visible = true;
+        }
+
+        protected void Button1_Click(object sender, EventArgs e)
+        {
+            //TextBox1.Visible = true;
+            //TextBox2.Visible = true;
+            //Label2.Visible = true;
+            //Label3.visible = true;
+            //Label4.visible = true;
+            //Button1.visible = true;
+            //Button3.visible = true;
+            //Dropdownlist1.visible = true;
         }
     }
 }

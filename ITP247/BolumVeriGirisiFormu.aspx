@@ -54,7 +54,7 @@
                 </tr>
                 <tr>
                     <td class="auto-style3">
-                        <asp:GridView ID="GridView1" runat="server" AllowSorting="True" AutoGenerateColumns="False" DataKeyNames="Bolum_ID" DataSourceID="SqlDataSource1" CellPadding="4" ForeColor="#333333" GridLines="None" Width="703px" CssClass="auto-style4" Height="302px">
+                        <asp:GridView ID="GridView1" runat="server" AllowSorting="True" AutoGenerateColumns="False" DataKeyNames="Bolum_ID" DataSourceID="SqlDataSource1" CellPadding="4" ForeColor="#333333" GridLines="None" Width="678px" CssClass="auto-style4" Height="302px">
                             <AlternatingRowStyle BackColor="White" />
                             <Columns>
                                 <asp:CommandField ShowDeleteButton="True" ShowEditButton="True" />
@@ -83,25 +83,31 @@
                 </tr>
                 <tr>
                     <td class="auto-style6">
-                        <asp:Button ID="Button1" runat="server" BackColor="#339933" CssClass="auto-style5" Font-Bold="True" Font-Size="X-Large" ForeColor="White" Height="37px" Text="Veri Giriş Formunu Aç" Width="227px" />
+                        <asp:Button ID="Button1" runat="server" BackColor="#339933" CssClass="auto-style5" Font-Bold="True" Font-Size="X-Large" ForeColor="White" Height="37px" Text="Veri Giriş Formunu Aç" Width="227px" OnClick="Button1_Click" />
                     <asp:Button ID="Button2" runat="server" BackColor="#CC3300" Font-Bold="True" Font-Size="X-Large" ForeColor="White" Height="37px" OnClientClick="window.close();" Text="Formu Kapat" Width="168px" style="cursor: pointer;"/>
                     </td>
                     <td>&nbsp;</td>
                 </tr>
                 <tr>
-                    <td class="auto-style7">Bölüm Ad:<asp:TextBox ID="TextBox1" runat="server"></asp:TextBox>
+                    <td class="auto-style7">
+                        <asp:Label ID="Label1" runat="server" Text="Bölüm Adı:"></asp:Label>
+                        <asp:TextBox ID="TextBox1" runat="server"></asp:TextBox>
                     </td>
                     <td class="auto-style8">
                         &nbsp;</td>
                 </tr>
                 <tr>
-                    <td class="auto-style6">Bölüm Tel:<asp:TextBox ID="TextBox2" runat="server"></asp:TextBox>
+                    <td class="auto-style6">
+                        <asp:Label ID="Label2" runat="server" Text="Bölüm Tel:"></asp:Label>
+                        <asp:TextBox ID="TextBox2" runat="server"></asp:TextBox>
                     </td>
                     <td>
                         &nbsp;</td>
                 </tr>
                 <tr>
-                    <td class="auto-style6">Müdür:<asp:DropDownList ID="DropDownList1" runat="server" DataSourceID="SqlDataSource2" DataTextField="Pers_Isim" DataValueField="Pers_ID">
+                    <td class="auto-style6">
+                        <asp:Label ID="Label3" runat="server" Text="Müdür:"></asp:Label>
+                        <asp:DropDownList ID="DropDownList1" runat="server" DataSourceID="SqlDataSource2" DataTextField="Pers_Isim" DataValueField="Pers_ID">
                         </asp:DropDownList>
                     </td>
                     <td>
@@ -110,7 +116,7 @@
                 <tr>
                     <td class="auto-style6">
                     <asp:Button ID="Button3" runat="server" BackColor="#339966" Font-Bold="True" Font-Size="X-Large" ForeColor="White" Height="37px" OnClientClick="window.close();" Text="Verileri Kaydet" Width="168px" style="cursor: pointer;" OnClick="Button3_Click"/>
-                        <asp:Label ID="lbl1" runat="server" Text="Label"></asp:Label>
+                        <asp:Label ID="lbl1" runat="server" Text="Label" Visible="False"></asp:Label>
                     </td>
                     <td>&nbsp;</td>
                 </tr>

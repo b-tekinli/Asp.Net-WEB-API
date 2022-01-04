@@ -107,7 +107,9 @@
                         </UpdateParameters>
                     </asp:SqlDataSource>
                 </td>
-                <td>&nbsp;</td>
+                <td>
+                    <asp:Button ID="Button2" runat="server" BackColor="#CC3300" Font-Bold="True" Font-Size="X-Large" ForeColor="White" Height="37px" OnClientClick="window.close();" Text="Formu Kapat" Width="168px" style="cursor: pointer;"/>
+                    </td>
             </tr>
             </table>
     </form>
