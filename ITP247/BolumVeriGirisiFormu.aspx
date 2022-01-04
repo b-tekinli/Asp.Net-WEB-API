@@ -16,7 +16,7 @@
         }
         .auto-style3 {
             text-align: center;
-            width: 728px;
+            width: 448px;
         }
         #form1 {
             display: flex;
@@ -29,11 +29,12 @@
             margin-top: 4px;
         }
         .auto-style6 {
-            width: 728px;
+            width: 448px;
         }
         .auto-style7 {
-            width: 728px;
+            width: 448px;
             height: 26px;
+            margin-left: 40px;
         }
         .auto-style8 {
             height: 26px;
@@ -82,33 +83,34 @@
                 </tr>
                 <tr>
                     <td class="auto-style6">
-                        <asp:Button ID="Button1" runat="server" BackColor="#339933" CssClass="auto-style5" Font-Bold="True" Font-Size="X-Large" ForeColor="White" Height="37px" Text="Veri Giriş Formunu Aç" Width="256px" />
+                        <asp:Button ID="Button1" runat="server" BackColor="#339933" CssClass="auto-style5" Font-Bold="True" Font-Size="X-Large" ForeColor="White" Height="37px" Text="Veri Giriş Formunu Aç" Width="227px" />
                     <asp:Button ID="Button2" runat="server" BackColor="#CC3300" Font-Bold="True" Font-Size="X-Large" ForeColor="White" Height="37px" OnClientClick="window.close();" Text="Formu Kapat" Width="168px" style="cursor: pointer;"/>
                     </td>
                     <td>&nbsp;</td>
                 </tr>
                 <tr>
-                    <td class="auto-style7">Bölüm Ad:</td>
+                    <td class="auto-style7">Bölüm Ad:<asp:TextBox ID="TextBox1" runat="server"></asp:TextBox>
+                    </td>
                     <td class="auto-style8">
-                        <asp:TextBox ID="TextBox1" runat="server"></asp:TextBox>
-                    </td>
+                        &nbsp;</td>
                 </tr>
                 <tr>
-                    <td class="auto-style6">Bölüm Tel:</td>
-                    <td>
-                        <asp:TextBox ID="TextBox2" runat="server"></asp:TextBox>
+                    <td class="auto-style6">Bölüm Tel:<asp:TextBox ID="TextBox2" runat="server"></asp:TextBox>
                     </td>
+                    <td>
+                        &nbsp;</td>
                 </tr>
                 <tr>
-                    <td class="auto-style6">Müdür:</td>
-                    <td>
-                        <asp:DropDownList ID="DropDownList1" runat="server" DataSourceID="SqlDataSource2" DataTextField="Pers_Isim" DataValueField="Pers_ID">
+                    <td class="auto-style6">Müdür:<asp:DropDownList ID="DropDownList1" runat="server" DataSourceID="SqlDataSource2" DataTextField="Pers_Isim" DataValueField="Pers_ID">
                         </asp:DropDownList>
                     </td>
+                    <td>
+                        &nbsp;</td>
                 </tr>
                 <tr>
                     <td class="auto-style6">
-                    <asp:Button ID="Button3" runat="server" BackColor="#339966" Font-Bold="True" Font-Size="X-Large" ForeColor="White" Height="37px" OnClientClick="window.close();" Text="Verileri Kaydet" Width="168px" style="cursor: pointer;"/>
+                    <asp:Button ID="Button3" runat="server" BackColor="#339966" Font-Bold="True" Font-Size="X-Large" ForeColor="White" Height="37px" OnClientClick="window.close();" Text="Verileri Kaydet" Width="168px" style="cursor: pointer;" OnClick="Button3_Click"/>
+                        <asp:Label ID="lbl1" runat="server" Text="Label"></asp:Label>
                     </td>
                     <td>&nbsp;</td>
                 </tr>
@@ -117,10 +119,15 @@
                         <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:con_PMTP %>" SelectCommand="SELECT tbl_Bolumler.Bolum_ID, tbl_Bolumler.Bolum_Adi, tbl_Bolumler.Bolum_Tel, tbl_Personeller.Pers_Isim FROM tbl_Bolumler INNER JOIN tbl_Personeller ON tbl_Bolumler.Mudur_ID = tbl_Personeller.Pers_ID AND tbl_Bolumler.Bolum_ID = tbl_Personeller.Bolum_ID" DeleteCommand="DELETE FROM tbl_Bolumler WHERE Bolum_ID = @Bolum_ID
 " UpdateCommand="UPDATE tbl_Bolumler
 SET Bolum_Adi = @Bolum_Adi, Bolum_Tel = @Bolum_Tel
-WHERE Bolum_ID  = @Bolum_ID">
+WHERE Bolum_ID  = @Bolum_ID" InsertCommand="INSERT INTO tbl_Bolumler (Bolum_Adi, Bolum_Tel, Mudur_ID) VALUES (@Bolum_Adi, @Bolum_Tel, @Mudur_ID)">
                             <DeleteParameters>
                                 <asp:Parameter Name="Bolum_ID" />
                             </DeleteParameters>
+                            <InsertParameters>
+                                <asp:Parameter Name="Bolum_Adi" />
+                                <asp:Parameter Name="Bolum_Tel" />
+                                <asp:Parameter Name="Mudur_ID" />
+                            </InsertParameters>
                             <UpdateParameters>
                                 <asp:Parameter Name="Bolum_Adi" />
                                 <asp:Parameter Name="Bolum_Tel" />
