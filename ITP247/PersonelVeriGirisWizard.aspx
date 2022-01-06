@@ -33,6 +33,13 @@
         .auto-style14 {
             color: #FF0000;
         }
+        .auto-style15 {
+            width: 95px;
+            height: 26px;
+        }
+        .auto-style16 {
+            height: 26px;
+        }
         </style>
     </head>
 <body>
@@ -73,7 +80,7 @@
                     </asp:SqlDataSource>
                     </td>
                 <td class="auto-style6">
-                    <asp:Wizard ID="Wizard1" runat="server" ActiveStepIndex="0" BackColor="#F7F6F3" BorderColor="#99FF99" BorderStyle="Solid" BorderWidth="1px" Font-Names="Verdana" Font-Size="0.8em" HeaderText="Personel Veri Giriş Formu" OnFinishButtonClick="Wizard1_FinishButtonClick" OnNextButtonClick="Wizard1_NextButtonClick" Width="542px" Height="293px" CssClass="auto-style11">
+                    <asp:Wizard ID="Wizard1" runat="server" ActiveStepIndex="2" BackColor="#F7F6F3" BorderColor="#99FF99" BorderStyle="Solid" BorderWidth="1px" Font-Names="Verdana" Font-Size="0.8em" HeaderText="Personel Veri Giriş Formu" OnFinishButtonClick="Wizard1_FinishButtonClick" OnNextButtonClick="Wizard1_NextButtonClick" Width="542px" Height="314px" CssClass="auto-style11">
                         <HeaderStyle BackColor="#5D7B9D" BorderStyle="Solid" Font-Bold="True" Font-Size="0.9em" ForeColor="White" HorizontalAlign="Left" />
                         <NavigationButtonStyle BackColor="#FFFBFF" BorderColor="#CCCCCC" BorderStyle="Solid" BorderWidth="1px" Font-Names="Verdana" Font-Size="0.8em" ForeColor="#284775" />
                         <SideBarButtonStyle BorderWidth="0px" Font-Names="Verdana" ForeColor="White" />
@@ -125,8 +132,8 @@
                                         </td>
                                     </tr>
                                     <tr>
-                                        <td class="auto-style12">Kenti</td>
-                                        <td>
+                                        <td class="auto-style15">Kenti</td>
+                                        <td class="auto-style16">
                                             <asp:DropDownList ID="DropDownList3" runat="server" AutoPostBack="True" DataSourceID="SqlDataSource4" DataTextField="Kent_Adi" DataValueField="Kent_Adi" Height="16px" Width="132px">
                                             </asp:DropDownList>
                                         </td>
