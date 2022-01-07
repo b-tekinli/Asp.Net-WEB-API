@@ -31,7 +31,8 @@ namespace ITP247
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox TextBox1;
-
+        protected global::System.Web.UI.WebControls.CheckBox CheckBox1;
+        protected global::System.Web.UI.WebControls.Label Label2;
         /// <summary>
         /// TextBox2 control.
         /// </summary>
@@ -58,7 +59,10 @@ namespace ITP247
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox TextBox3;
-
+        protected global::System.Web.UI.WebControls.TextBox TextBox4;
+        protected global::System.Web.UI.WebControls.TextBox TextBox5;
+        protected global::System.Web.UI.WebControls.TextBox TextBox6;
+        protected global::System.Web.UI.WebControls.TextBox TextBox7;
         /// <summary>
         /// DropDownList1 control.
         /// </summary>
@@ -76,7 +80,8 @@ namespace ITP247
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.DropDownList DropDownList2;
-
+        protected global::System.Web.UI.WebControls.DropDownList DropDownList4;
+        protected global::System.Web.UI.WebControls.DropDownList DropDownList5;
         /// <summary>
         /// SqlDataSource1 control.
         /// </summary>
@@ -85,7 +90,7 @@ namespace ITP247
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.SqlDataSource SqlDataSource1;
-
+        protected global::System.Web.UI.WebControls.SqlDataSource SqlDataSource6;
         /// <summary>
         /// SqlDataSource2 control.
         /// </summary>

@@ -1,6 +1,6 @@
-﻿-- Kategoriler  Veri Girisi
-insert into tbl_Kategoriler (Cinsiyet,Unvan,Kent_Adi,Il_Kodu,Il_Adi,Ulke,Ay_Adi,Yetki_Turu) values 
-('KADIN','Yönetici','Fatih','34','İstanbul','Turkiye','Ocak','Admin'),
-('ERKEK','SatisElemani','Avcılar','34','İstanbul','Turkiye','Şubat','VT Yoneticisi'),
-(NULL,'Pazarlama','BayramPasa','34','İstanbul','Turkiye','Mart','Bilisim Sistemi'),
-(NULL,'OfisYöneticisi','BakirKöy','34','İstanbul','Turkiye','Nisan','Bilisim Sistemi')
+﻿SET IDENTITY_INSERT [dbo].[tbl_Kategoriler] ON
+INSERT INTO [dbo].[tbl_Kategoriler] ([Kategori_ID], [Cinsiyet], [Unvan], [Kent_Adi], [Ulke], [Il_Adi], [Il_Kodu], [Ay_Adi], [Yetki_Turu]) VALUES (1, N'KADIN', N'Yönetici', N'Fatih', N'Turkiye', N'Istanbul', N'34', N'Ocak                                              ', N'Admin')
+INSERT INTO [dbo].[tbl_Kategoriler] ([Kategori_ID], [Cinsiyet], [Unvan], [Kent_Adi], [Ulke], [Il_Adi], [Il_Kodu], [Ay_Adi], [Yetki_Turu]) VALUES (2, N'ERKEK', N'SatisElemani', N'Avcilar', N'Japonya', N'Ankara', N'06', N'Subat                                             ', N'VT Yoneticisi')
+INSERT INTO [dbo].[tbl_Kategoriler] ([Kategori_ID], [Cinsiyet], [Unvan], [Kent_Adi], [Ulke], [Il_Adi], [Il_Kodu], [Ay_Adi], [Yetki_Turu]) VALUES (3, NULL, N'Pazarlama', N'BayramPasa', N'Çin', N'Kocaeli', N'41', N'Mart                                              ', N'Bilisim Sistemi')
+INSERT INTO [dbo].[tbl_Kategoriler] ([Kategori_ID], [Cinsiyet], [Unvan], [Kent_Adi], [Ulke], [Il_Adi], [Il_Kodu], [Ay_Adi], [Yetki_Turu]) VALUES (4, NULL, N'OfisYöneticisi', N'BakirKöy', N'Ukrayna', N'Bursa', N'16', N'Nisan                                             ', N'Stajyer')
+SET IDENTITY_INSERT [dbo].[tbl_Kategoriler] OFF
