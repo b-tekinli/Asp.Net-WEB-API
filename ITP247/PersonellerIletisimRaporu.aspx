@@ -11,7 +11,11 @@
         }
         .auto-style2 {
             font-size: xx-large;
-            }
+            text-align: right;
+        }
+        .auto-style3 {
+            height: 31px;
+        }
     </style>
 </head>
 <body>
@@ -20,14 +24,14 @@
         </div>
     <table class="auto-style1">
         <tr>
-            <td class="auto-style2" style="color: forestgreen;" colspan="2"><strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Personel İletişim Raporu</strong></td>
+            <td class="auto-style2" style="color: forestgreen;" colspan="2"><strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Personel İletişim Raporu</strong></td>
         </tr>
         <tr>
             <td>&nbsp;</td>
             <td>&nbsp;</td>
         </tr>
         <tr>
-            <td>
+            <td class="auto-style3">
                 <asp:Repeater ID="Repeater1" runat="server" DataSourceID="SqlDataSource1">
                     <HeaderTemplate>
                         <tr style="background-color: lavender;">
@@ -68,7 +72,7 @@
                     </AlternatingItemTemplate>
                 </asp:Repeater>
             </td>
-            <td>&nbsp;</td>
+            <td class="auto-style3"></td>
         </tr>
         <tr>
             <td>

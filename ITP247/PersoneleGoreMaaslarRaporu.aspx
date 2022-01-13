@@ -11,17 +11,25 @@
         }
         .auto-style2 {
             font-size: xx-large;
+            text-align: center;
+        }
+        .auto-style3 {
+            font-size: large;
         }
     </style>
 </head>
-<body>
+<body style="display: flex; justify-content: center;">
     <form id="form1" runat="server">
         <table class="auto-style1">
             <tr>
                 <td class="auto-style2" style="color: forestgreen;" colspan="2"><strong>Personele Göre Maaşlar Raporu</strong></td>
             </tr>
             <tr>
-                <td>Personel Adı:
+                <td class="auto-style2" style="color: forestgreen;" colspan="2">&nbsp;</td>
+            </tr>
+            <tr>
+                <td><span class="auto-style3">Personel Adı:
+                    </span>
                     <asp:DropDownList ID="DropDownList1" runat="server" AutoPostBack="True" DataSourceID="SqlDataSource2" DataTextField="Pers_Isim" DataValueField="Pers_ID" Height="16px" Width="145px">
                     </asp:DropDownList>
                 </td>

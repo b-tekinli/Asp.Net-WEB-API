@@ -11,25 +11,45 @@
         }
         .auto-style2 {
             font-size: xx-large;
+            text-align: center;
+        }
+        .auto-style3 {
+            text-align: center;
+        }
+        .auto-style4 {
+            font-size: xx-large;
+            text-align: center;
+            height: 24px;
+        }
+        .auto-style5 {
+            font-size: large;
         }
     </style>
 </head>
-<body>
+<body style="display: flex; justify-content: center;">
     <form id="form1" runat="server">
         <table class="auto-style1">
             <tr>
                 <td class="auto-style2" style="color: forestgreen;" colspan="2"><strong>Bölümlere Göre Personel Listesi Raporu</strong></td>
             </tr>
             <tr>
-                <td>Bölüm Adı:
-                    <asp:DropDownList ID="DropDownList1" runat="server" AutoPostBack="True" DataSourceID="SqlDataSource2" DataTextField="Bolum_Adi" DataValueField="Bolum_ID" Height="16px" Width="145px">
+                <td class="auto-style4" style="color: forestgreen;" colspan="2"></td>
+            </tr>
+            <tr>
+                <td class="auto-style3"><span class="auto-style5">Bölüm Adı:
+                    </span>
+                    <asp:DropDownList ID="DropDownList1" runat="server" AutoPostBack="True" DataSourceID="SqlDataSource2" DataTextField="Bolum_Adi" DataValueField="Bolum_ID" Height="31px" Width="145px">
                     </asp:DropDownList>
                 </td>
                 <td>&nbsp;</td>
             </tr>
             <tr>
-                <td>
-                    <asp:GridView ID="GridView1" runat="server" AllowPaging="True" AllowSorting="True" AutoGenerateColumns="False" DataSourceID="SqlDataSource1" CellPadding="4" ForeColor="#333333" GridLines="None">
+                <td class="auto-style3">&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            <tr>
+                <td class="auto-style3">
+                    <asp:GridView ID="GridView1" runat="server" AllowPaging="True" AllowSorting="True" AutoGenerateColumns="False" DataSourceID="SqlDataSource1" CellPadding="4" ForeColor="#333333" GridLines="None" Height="317px" Width="1210px">
                         <AlternatingRowStyle BackColor="White" />
                         <Columns>
                             <asp:BoundField DataField="Pers_ID" HeaderText="ID" SortExpression="Pers_ID" />

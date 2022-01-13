@@ -40,6 +40,9 @@
         .auto-style16 {
             height: 26px;
         }
+        .auto-style17 {
+            color: #FF3300;
+        }
         </style>
     </head>
 <body>
@@ -80,7 +83,7 @@
                     </asp:SqlDataSource>
                     </td>
                 <td class="auto-style6">
-                    <asp:Wizard ID="Wizard1" runat="server" ActiveStepIndex="3" BackColor="#F7F6F3" BorderColor="#99FF99" BorderStyle="Solid" BorderWidth="1px" Font-Names="Verdana" Font-Size="0.8em" HeaderText="Personel Veri Giriş Formu" OnFinishButtonClick="Wizard1_FinishButtonClick" OnNextButtonClick="Wizard1_NextButtonClick" Width="542px" Height="314px" CssClass="auto-style11">
+                    <asp:Wizard ID="Wizard1" runat="server" ActiveStepIndex="4" BackColor="#F7F6F3" BorderColor="#99FF99" BorderStyle="Solid" BorderWidth="1px" Font-Names="Verdana" Font-Size="0.8em" HeaderText="Personel Veri Giriş Formu" OnFinishButtonClick="Wizard1_FinishButtonClick" OnNextButtonClick="Wizard1_NextButtonClick" Width="542px" Height="314px" CssClass="auto-style11">
                         <HeaderStyle BackColor="#5D7B9D" BorderStyle="Solid" Font-Bold="True" Font-Size="0.9em" ForeColor="White" HorizontalAlign="Left" />
                         <NavigationButtonStyle BackColor="#FFFBFF" BorderColor="#CCCCCC" BorderStyle="Solid" BorderWidth="1px" Font-Names="Verdana" Font-Size="0.8em" ForeColor="#284775" />
                         <SideBarButtonStyle BorderWidth="0px" Font-Names="Verdana" ForeColor="White" />
@@ -95,7 +98,7 @@
                         <StepStyle BorderWidth="0px" ForeColor="#5D7B9D" />
                         <WizardSteps>
                             <asp:WizardStep runat="server" title="Kişisel Veriler">
-                                    <a id="Wizard1_SideBarContainer_SideBarList_SideBarButton_0" "" "" "" ,="" ,="" ,="" false,="" href="javascript:WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(" style="display:inline-block;color:White;border-width:0px;font-family:Verdana;" true))"="" true,="" wizard1$sidebarcontainer$sidebarlist$ctl00$sidebarbutton",="">Kişisel Veriler</a>  
+                                    <a id="Wizard1_SideBarContainer_SideBarList_SideBarButton_0" "" "" "" ,="" ,="" ,="" false,="" href="javascript:WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(" style="display:inline-block;border-width:0px;font-family:Verdana;" true))"="" true,="" wizard1$sidebarcontainer$sidebarlist$ctl00$sidebarbutton",="" class="auto-style17">Kişisel Veriler</a>  
                             </asp:WizardStep>
                             <asp:WizardStep runat="server" title="İletişim Verileri">
                                 <table class="auto-style3">

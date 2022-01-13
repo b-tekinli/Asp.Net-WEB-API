@@ -76,7 +76,7 @@ namespace ITP247
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Button Button1;
-
+        protected global::System.Web.UI.WebControls.Label Label1;
         /// <summary>
         /// SqlDataSource1 control.
         /// </summary>
@@ -85,5 +85,6 @@ namespace ITP247
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.SqlDataSource SqlDataSource1;
+        protected global::System.Web.UI.WebControls.SqlDataSource SqlDataSource2;
     }
 }

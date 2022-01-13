@@ -24,16 +24,19 @@
         .auto-style5 {
             height: 34px;
         }
-        .auto-style6 {
-            width: 80px;
-            text-align: center;
-        }
         .auto-style7 {
             margin-top: 1px;
         }
+        .auto-style8 {
+            text-align: center;
+        }
+        .auto-style9 {
+            width: 80px;
+            text-align: center;
+        }
     </style>
 </head>
-<body>
+<body style="display: flex; justify-content: center;">
     <form id="form1" runat="server">
         <table class="auto-style1">
             <tr>
@@ -47,7 +50,7 @@
                 </td>
             </tr>
             <tr>
-                <td class="auto-style6">
+                <td class="auto-style9">
                     <asp:GridView ID="GridView1" runat="server" CellPadding="4" DataSourceID="SqlDataSource2" ForeColor="#333333" GridLines="None" AllowSorting="True" AutoGenerateColumns="False" DataKeyNames="Pers_ID" Height="16px" Width="284px">
                         <AlternatingRowStyle BackColor="White" />
                         <Columns>
@@ -68,6 +71,7 @@
                     </asp:GridView>
                 </td>
                 <td>
+                    <div class="auto-style8">
                     <asp:DetailsView ID="DetailsView1" runat="server" AutoGenerateRows="False" CellPadding="4" DataKeyNames="Maas_ID" DataSourceID="SqlDataSource3" ForeColor="#333333" GridLines="None" Height="63px" Width="225px">
                         <AlternatingRowStyle BackColor="White" />
                         <CommandRowStyle BackColor="#C5BBAF" Font-Bold="True" />
@@ -86,6 +90,8 @@
                         <PagerStyle BackColor="#666666" ForeColor="White" HorizontalAlign="Center" />
                         <RowStyle BackColor="#E3EAEB" />
                     </asp:DetailsView>
+                    </div>
+                    <div class="auto-style8">
                     <asp:GridView ID="GridView2" runat="server" AllowSorting="True" AutoGenerateColumns="False" CellPadding="4" DataKeyNames="Maas_ID" DataSourceID="SqlDataSource3" ForeColor="#333333" GridLines="None" CssClass="auto-style7" Height="91px" Width="483px">
                         <AlternatingRowStyle BackColor="White" />
                         <Columns>
@@ -108,6 +114,7 @@
                         <SortedDescendingCellStyle BackColor="#D4DFE1" />
                         <SortedDescendingHeaderStyle BackColor="#15524A" />
                     </asp:GridView>
+                    </div>
                 </td>
             </tr>
             <tr>
