@@ -15,25 +15,29 @@
             font-size: xx-large;
         }
         .auto-style3 {
-            width: 204px;
+            width: 116px;
         }
         .auto-style4 {
             margin-left: 0px;
         }
+        .auto-style5 {
+            width: 116px;
+            font-size: large;
+        }
     </style>
 </head>
-<body>
+<body style="display: flex; justify-content: center;">
     <form id="form1" runat="server">
         <div>
         </div>
         <table class="auto-style1">
             <tr>
-                <td class="auto-style2" colspan="2"><strong>PERSONEL VERİ GÜNCELLEME FORMU</strong></td>
+                <td class="auto-style2" colspan="2"><strong>Personel Veri Güncelleme Formu</strong></td>
             </tr>
             <tr>
-                <td class="auto-style3">Personel Adı:</td>
+                <td class="auto-style5">Personel Adı:</td>
                 <td>
-                    <asp:DropDownList ID="DropDownList1" runat="server" AutoPostBack="True" DataSourceID="SqlDataSource1" DataTextField="Pers_Isim" DataValueField="Pers_ID">
+                    <asp:DropDownList ID="DropDownList1" runat="server" AutoPostBack="True" DataSourceID="SqlDataSource1" DataTextField="Pers_Isim" DataValueField="Pers_ID" Height="27px" Width="103px">
                     </asp:DropDownList>
                 </td>
             </tr>
