@@ -28,7 +28,7 @@
             <tr>
                 <td>
                     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                    <asp:Chart ID="Chart1" runat="server" DataSourceID="SqlDataSource1" OnLoad="Chart1_Load" Width="725px" Height="367px">
+                    <asp:Chart ID="Chart1" runat="server" DataSourceID="SqlDataSource1" OnLoad="Chart1_Load" Width="681px" Height="367px">
                         <series>
                             <asp:Series Name="Series1" XValueMember="Pers_Isim" YValueMembers="Toplam">
                             </asp:Series>

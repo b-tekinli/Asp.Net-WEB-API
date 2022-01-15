@@ -40,9 +40,6 @@
         .auto-style16 {
             height: 26px;
         }
-        .auto-style17 {
-            color: #FF3300;
-        }
         </style>
     </head>
 <body>
@@ -62,13 +59,14 @@
             <tr>
                 <td class="auto-style5">
                     <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:con_PMTP %>" 
-                                        InsertCommand="INSERT INTO tbl_Personeller(Pers_Adi, Pers_Soyadi, Pers_DTarihi, Pers_Ise_Giris_Tarihi, Pers_Adresi, Pers_Kenti, Pers_Ili, Pers_Tel, Pers_Cep, Pers_Email, Bolum_ID, Pers_Maas, Unvan_ID, Cinsiyet_ID) VALUES (@Pers_Adi, @Pers_Soyadi, @Pers_DTarihi, @Pers_Ise_Giris_Tarihi, @Pers_Adresi, @Pers_Kenti, @Pers_Ili, @Pers_Tel, @Pers_Cep, @Pers_Email, @Bolum_ID, @Pers_Maas, @Unvan_ID, @Cinsiyet_ID)" 
-                                        SelectCommand="SELECT Pers_ID, Pers_Adi, Pers_Soyadi, Pers_DTarihi, Pers_Ise_Giris_Tarihi, Pers_Tel, Pers_Cep, Pers_Email FROM tbl_Personeller">
+                                        InsertCommand="INSERT INTO tbl_Personeller(Pers_ID, Pers_Adi, Pers_Soyadi, Pers_DTarihi, Pers_Ise_Giris_Tarihi, Pers_Adresi, Pers_Kenti, Pers_Ili, Pers_Tel, Pers_Cep, Pers_Email, Bolum_ID, Pers_Maas, Unvan_ID, Cinsiyet_ID) VALUES (@Pers_ID, @Pers_Adi, @Pers_Soyadi, @Pers_DTarihi, @Pers_Ise_Giris_Tarihi, @Pers_Adresi, @Pers_Kenti, @Pers_Ili, @Pers_Tel, @Pers_Cep, @Pers_Email, @Bolum_ID, @Pers_Maas, @Unvan_ID, @Cinsiyet_ID)" 
+                                        SelectCommand="SELECT Pers_ID, Pers_Adi, Pers_Soyadi, Pers_DTarihi, Pers_Ise_Giris_Tarihi, Pers_Adresi, Pers_Kenti, Pers_Ili, Pers_Tel, Pers_Cep, Pers_Email, Bolum_ID, Unvan_ID, Cinsiyet_ID, Pers_Maas AS Expr1 FROM tbl_Personeller">
                         <InsertParameters>
+                            <asp:Parameter Name="Pers_ID" />
                             <asp:Parameter Name="Pers_Adi"  Type ="String"/>
                             <asp:Parameter Name="Pers_Soyadi" Type ="String"/>
                             <asp:Parameter Name="Pers_DTarihi" Type="DateTime"/>
-                            <asp:Parameter Name="Pers_Ise_Giris_Tarihi"/>
+                            <asp:Parameter Name="Pers_Ise_Giris_Tarihi" Type="DateTime"/>
                             <asp:Parameter Name="Pers_Adresi" Type ="String"/>
                             <asp:Parameter Name="Pers_Kenti" Type ="String"/>
                             <asp:Parameter Name="Pers_Ili" Type ="String"/>
@@ -83,7 +81,7 @@
                     </asp:SqlDataSource>
                     </td>
                 <td class="auto-style6">
-                    <asp:Wizard ID="Wizard1" runat="server" ActiveStepIndex="4" BackColor="#F7F6F3" BorderColor="#99FF99" BorderStyle="Solid" BorderWidth="1px" Font-Names="Verdana" Font-Size="0.8em" HeaderText="Personel Veri Giriş Formu" OnFinishButtonClick="Wizard1_FinishButtonClick" OnNextButtonClick="Wizard1_NextButtonClick" Width="542px" Height="314px" CssClass="auto-style11">
+                    <asp:Wizard ID="Wizard1" runat="server" ActiveStepIndex="3" BackColor="#F7F6F3" BorderColor="#99FF99" BorderStyle="Solid" BorderWidth="1px" Font-Names="Verdana" Font-Size="0.8em" HeaderText="Personel Veri Giriş Formu" OnFinishButtonClick="Wizard1_FinishButtonClick" OnNextButtonClick="Wizard1_NextButtonClick" Width="542px" Height="314px" CssClass="auto-style11">
                         <HeaderStyle BackColor="#5D7B9D" BorderStyle="Solid" Font-Bold="True" Font-Size="0.9em" ForeColor="White" HorizontalAlign="Left" />
                         <NavigationButtonStyle BackColor="#FFFBFF" BorderColor="#CCCCCC" BorderStyle="Solid" BorderWidth="1px" Font-Names="Verdana" Font-Size="0.8em" ForeColor="#284775" />
                         <SideBarButtonStyle BorderWidth="0px" Font-Names="Verdana" ForeColor="White" />
@@ -98,7 +96,7 @@
                         <StepStyle BorderWidth="0px" ForeColor="#5D7B9D" />
                         <WizardSteps>
                             <asp:WizardStep runat="server" title="Kişisel Veriler">
-                                    <a id="Wizard1_SideBarContainer_SideBarList_SideBarButton_0" "" "" "" ,="" ,="" ,="" false,="" href="javascript:WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(" style="display:inline-block;border-width:0px;font-family:Verdana;" true))"="" true,="" wizard1$sidebarcontainer$sidebarlist$ctl00$sidebarbutton",="" class="auto-style17">Kişisel Veriler</a>  
+                                    <a id="Wizard1_SideBarContainer_SideBarList_SideBarButton_0" "" href="javascript:__doPostBack('Wizard1$SideBarContainer$SideBarList$ctl00$SideBarButton','')" style="display:inline-block;border-width:0px;font-family:Verdana; color: White;">Kişisel Veriler</a>  
                             </asp:WizardStep>
                             <asp:WizardStep runat="server" title="İletişim Verileri">
                                 <table class="auto-style3">

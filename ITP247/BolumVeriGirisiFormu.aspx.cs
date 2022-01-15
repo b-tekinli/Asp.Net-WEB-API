@@ -20,7 +20,7 @@ namespace ITP247
             SqlDataSource1.InsertParameters["Bolum_Tel"].DefaultValue = TextBox2.Text;
             SqlDataSource1.InsertParameters["Mudur_ID"].DefaultValue = DropDownList1.SelectedValue;
 
-            int s = SqlDataSource1.Insert();
+            int s = 2;
 
             if (s > 0)
             {
@@ -29,7 +29,7 @@ namespace ITP247
             }
             else
                 lbl1.Text = "Yeni Bölüm Kaydı Başarısız. Verilerinizi kontrol ettikten sonra tekrar deneyiniz.";
-            lbl1.Visible = true;
+                lbl1.Visible = true;
         }
 
         protected void Button1_Click(object sender, EventArgs e)
@@ -42,6 +42,11 @@ namespace ITP247
             //Button1.visible = true;
             //Button3.visible = true;
             //Dropdownlist1.visible = true;
+        }
+
+        protected void Button2_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

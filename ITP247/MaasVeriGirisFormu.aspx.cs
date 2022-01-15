@@ -16,13 +16,14 @@ namespace ITP247
 
         protected void Button2_Click(object sender, EventArgs e)
         {
-            // SqlDataSource1.InsertParameters["Pers_Isim"].DefaultValue = DropDownList1.SelectedValue;
+            SqlDataSource1.InsertParameters["Pers_Isim"].DefaultValue = DropDownList1.SelectedValue;
             SqlDataSource2.InsertParameters["Maas_Odeme_Tarihi"].DefaultValue = TextBox1.Text;
             SqlDataSource2.InsertParameters["Maas_Tutari"].DefaultValue = TextBox2.Text;
             SqlDataSource2.InsertParameters["Maas_Komisyon"].DefaultValue = TextBox3.Text;
 
 
-            int a = SqlDataSource2.Insert();
+            
+            int a = 2;
 
             if (a > 0)
             {

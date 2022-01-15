@@ -83,7 +83,7 @@
                 </tr>
                 <tr>
                     <td class="auto-style4">
-                        <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:con_PMTP %>" SelectCommand="SELECT [Pers_ID], [Pers_Isim] FROM [tbl_Personeller]" InsertCommand="INSERT INTO tbl_Personeller (Pers_ID, Pers_Isim) VALUES (@Pers_ID, @Pers_Isim)">
+                        <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:con_PMTP %>" SelectCommand="SELECT Pers_ID, Pers_Isim FROM tbl_Personeller" InsertCommand="INSERT INTO tbl_Personeller (Pers_ID, Pers_Isim) VALUES (@Pers_ID, @Pers_Isim)">
                             <InsertParameters>
                                 <asp:Parameter Name="Pers_ID" />
                                 <asp:Parameter Name="Pers_Isim" />
@@ -92,7 +92,7 @@
                     </td>
                     <td>
                         <asp:SqlDataSource ID="SqlDataSource2" runat="server" ConnectionString="<%$ ConnectionStrings:con_PMTP %>" InsertCommand="INSERT INTO tbl_PersonelMaaslari (Maas_Odeme_Tarihi, Maas_Tutari, Maas_Komisyon)
-VALUES (@Maas_Odeme_Tarihi, @Maas_Tutari, @Maas_Komisyon)" SelectCommand="SELECT * FROM tbl_PersonelMaaslari" UpdateCommand="UPDATE tbl_PersonelMaaslari
+VALUES (@Maas_Odeme_Tarihi, @Maas_Tutari, @Maas_Komisyon)" SelectCommand="SELECT Maas_ID, Pers_ID, Maas_Odeme_Tarihi, Maas_Tutari, Maas_Komisyon, Maas_Toplam, Ay_ID, Maas_Yili FROM tbl_PersonelMaaslari" UpdateCommand="UPDATE tbl_PersonelMaaslari
 SET Maas_Tutari =@Maas_Tutari, Maas_Komisyon=@Maas_Komisyon,Maas_Odeme_Tarihi=@Maas_Odeme_Tarihi
 WHERE PersonelMaaslari=@PersonelMaaslari">
                             <InsertParameters>

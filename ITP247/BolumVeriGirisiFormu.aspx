@@ -39,6 +39,9 @@
         .auto-style8 {
             height: 26px;
         }
+        .auto-style9 {
+            color: #FF6600;
+        }
     </style>
 </head>
 <body>
@@ -84,7 +87,7 @@
                 <tr>
                     <td class="auto-style6">
                         <asp:Button ID="Button1" runat="server" BackColor="#339933" CssClass="auto-style5" Font-Bold="True" Font-Size="X-Large" ForeColor="White" Height="37px" Text="Veri Giriş Formunu Aç" Width="227px" OnClick="Button1_Click" OnClientClick="target='_blank';" PostBackUrl="~/PersonelVeriGirisFormu.aspx" />
-                    <asp:Button ID="Button2" runat="server" BackColor="#CC3300" Font-Bold="True" Font-Size="X-Large" ForeColor="White" Height="37px" OnClientClick="window.close();" Text="Formu Kapat" Width="168px" style="cursor: pointer;"/>
+                    <asp:Button ID="Button2" runat="server" BackColor="#CC3300" Font-Bold="True" Font-Size="X-Large" ForeColor="White" Height="37px" OnClientClick="window.close();" Text="Formu Kapat" Width="168px" style="cursor: pointer;" OnClick="Button2_Click"/>
                     </td>
                     <td>&nbsp;</td>
                 </tr>
@@ -115,8 +118,8 @@
                 </tr>
                 <tr>
                     <td class="auto-style6">
-                    <asp:Button ID="Button3" runat="server" BackColor="#339966" Font-Bold="True" Font-Size="X-Large" ForeColor="White" Height="37px" OnClientClick="window.close();" Text="Verileri Kaydet" Width="168px" style="cursor: pointer;" OnClick="Button3_Click"/>
-                        <asp:Label ID="lbl1" runat="server" Text="Label" Visible="False"></asp:Label>
+                    <asp:Button ID="Button3" runat="server" BackColor="#339966" Font-Bold="True" Font-Size="X-Large" ForeColor="White" Height="37px" Text="Verileri Kaydet" Width="168px" style="cursor: pointer;" OnClick="Button3_Click"/>
+                        <asp:Label ID="lbl1" runat="server" Text="Label" Visible="False" CssClass="auto-style9"></asp:Label>
                     </td>
                     <td>&nbsp;</td>
                 </tr>
