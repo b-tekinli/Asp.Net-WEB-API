@@ -7,32 +7,27 @@ using System.Web.UI.WebControls;
 
 namespace ITP247
 {
-    public partial class MaasVeriGirisFormu1 : System.Web.UI.Page
+    public partial class MaasVeriGirisFormu : System.Web.UI.Page
     {
-        protected void Page_Load(object sender, EventArgs e)
+
+        protected void Button1_Click(object sender, EventArgs e)
         {
 
-        }
+            SqlDataSource3.InsertParameters["Pers_ID"].DefaultValue = DropDownList2.SelectedValue;
+            SqlDataSource3.InsertParameters["Maas_Odeme_Tarihi"].DefaultValue = TextBox1.Text;
+            SqlDataSource3.InsertParameters["Maas_Tutari"].DefaultValue = TextBox2.Text;
+            SqlDataSource3.InsertParameters["Maas_Komisyon"].DefaultValue = TextBox3.Text;
 
-        protected void Button2_Click(object sender, EventArgs e)
-        {
-            SqlDataSource1.InsertParameters["Pers_Isim"].DefaultValue = DropDownList1.SelectedValue;
-            SqlDataSource2.InsertParameters["Maas_Odeme_Tarihi"].DefaultValue = TextBox1.Text;
-            SqlDataSource2.InsertParameters["Maas_Tutari"].DefaultValue = TextBox2.Text;
-            SqlDataSource2.InsertParameters["Maas_Komisyon"].DefaultValue = TextBox3.Text;
-
-
-            
-            int a = 2;
+            int a = SqlDataSource3.Insert();
 
             if (a > 0)
             {
-                Label1.Text = "Yeni Maaş Bilgisi: <b>" + DropDownList1.Text + "</b><p>Başarı ile Eklendi.";
+                Label1.Text = "Yeni Maaş Verisi: <b>" + DropDownList2.SelectedItem + "</b><p>Başarı ile Eklendi";
                 Label1.Visible = true;
             }
             else
             {
-                Label1.Text = "Yeni Maaş Kaydı Başarısız. Verilerinizi Kontrol ettikten sonra Tekrar deneyiniz...";
+                Label1.Text = "Yeni Maaş Kaydı Başarısız. Verilerinizi Kontrol Ettikten Sonra Tekrar Deneyiniz";
                 Label1.Visible = true;
             }
         }
