@@ -110,7 +110,7 @@
                 <tr>
                     <td class="auto-style6">
                         <asp:Label ID="Label3" runat="server" Text="Müdür:"></asp:Label>
-                        <asp:DropDownList ID="DropDownList1" runat="server" DataSourceID="SqlDataSource2" DataTextField="Pers_Isim" DataValueField="Pers_ID">
+                        <asp:DropDownList ID="DropDownList1" runat="server" DataSourceID="SqlDataSource2" DataTextField="Pers_Isim" DataValueField="Pers_ID" AutoPostBack="True">
                         </asp:DropDownList>
                     </td>
                     <td>
@@ -125,10 +125,7 @@
                 </tr>
                 <tr>
                     <td class="auto-style6">
-                        <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:con_PMTP %>" SelectCommand="SELECT tbl_Bolumler.Bolum_ID, tbl_Bolumler.Bolum_Adi, tbl_Bolumler.Bolum_Tel, tbl_Personeller.Pers_Isim FROM tbl_Bolumler INNER JOIN tbl_Personeller ON tbl_Bolumler.Mudur_ID = tbl_Personeller.Pers_ID AND tbl_Bolumler.Bolum_ID = tbl_Personeller.Bolum_ID" DeleteCommand="DELETE FROM tbl_Bolumler WHERE Bolum_ID = @Bolum_ID
-" UpdateCommand="UPDATE tbl_Bolumler
-SET Bolum_Adi = @Bolum_Adi, Bolum_Tel = @Bolum_Tel
-WHERE Bolum_ID  = @Bolum_ID" InsertCommand="INSERT INTO tbl_Bolumler (Bolum_Adi, Bolum_Tel, Mudur_ID) VALUES (@Bolum_Adi, @Bolum_Tel, @Mudur_ID)">
+                        <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:con_PMTP %>" SelectCommand="SELECT tbl_Bolumler.Bolum_ID, tbl_Bolumler.Bolum_Adi, tbl_Bolumler.Bolum_Tel, tbl_Personeller.Pers_Isim FROM tbl_Bolumler INNER JOIN tbl_Personeller ON tbl_Bolumler.Mudur_ID = tbl_Personeller.Pers_ID" DeleteCommand="DELETE FROM tbl_Bolumler WHERE Bolum_ID=@Bolum_ID" UpdateCommand="UPDATE tbl_Bolumler SET Bolum_Adi=@Bolum_Adi, Bolum_Tel=@Bolum_Tel WHERE Bolum_ID=@Bolum_ID" InsertCommand="INSERT INTO tbl_Bolumler (Bolum_Adi, Bolum_Tel, Mudur_ID) VALUES (@Bolum_Adi, @Bolum_Tel, @Mudur_ID)">
                             <DeleteParameters>
                                 <asp:Parameter Name="Bolum_ID" />
                             </DeleteParameters>

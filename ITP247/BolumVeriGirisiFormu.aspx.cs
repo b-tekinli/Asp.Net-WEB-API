@@ -19,8 +19,9 @@ namespace ITP247
             SqlDataSource1.InsertParameters["Bolum_Adi"].DefaultValue = TextBox1.Text;
             SqlDataSource1.InsertParameters["Bolum_Tel"].DefaultValue = TextBox2.Text;
             SqlDataSource1.InsertParameters["Mudur_ID"].DefaultValue = DropDownList1.SelectedValue;
+            
 
-            int s = 2;
+            int s = SqlDataSource1.Insert();
 
             if (s > 0)
             {
@@ -34,14 +35,13 @@ namespace ITP247
 
         protected void Button1_Click(object sender, EventArgs e)
         {
-            //TextBox1.Visible = true;
-            //TextBox2.Visible = true;
-            //Label2.Visible = true;
-            //Label3.visible = true;
-            //Label4.visible = true;
-            //Button1.visible = true;
-            //Button3.visible = true;
-            //Dropdownlist1.visible = true;
+            TextBox1.Visible = true;
+            TextBox2.Visible = true;
+            Label2.Visible = true;
+            Label3.Visible = true;
+            Button1.Visible = true;
+            Button3.Visible = true;
+            DropDownList1.Visible = true;
         }
 
         protected void Button2_Click(object sender, EventArgs e)

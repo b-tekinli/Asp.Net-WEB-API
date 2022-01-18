@@ -23,6 +23,13 @@ namespace ITP247
         /// </remarks>
         protected global::System.Web.UI.HtmlControls.HtmlForm form1;
         protected global::System.Web.UI.WebControls.Label lbl1;
+        protected global::System.Web.UI.WebControls.Label Label2;
+        protected global::System.Web.UI.WebControls.Label Label3;
+        protected global::System.Web.UI.WebControls.Label Label4;
+        protected global::System.Web.UI.WebControls.Button Button1;
+        protected global::System.Web.UI.WebControls.Button Button3;
+
+
         /// <summary>
         /// GridView1 control.
         /// </summary>
@@ -34,6 +41,7 @@ namespace ITP247
         protected global::System.Web.UI.WebControls.TextBox TextBox1;
         protected global::System.Web.UI.WebControls.TextBox TextBox2;
         protected global::System.Web.UI.WebControls.DropDownList DropDownList1;
+
         /// <summary>
         /// SqlDataSource1 control.
         /// </summary>
