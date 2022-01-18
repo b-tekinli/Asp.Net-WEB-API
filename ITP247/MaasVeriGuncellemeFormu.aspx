@@ -40,7 +40,7 @@
     <form id="form1" runat="server">
         <table class="auto-style1">
             <tr>
-                <td class="auto-style2" colspan="2"><strong>Maaş Veri Giriş Formu</strong></td>
+                <td class="auto-style2" colspan="2"><strong>Maaş Veri Güncelleme Formu</strong></td>
             </tr>
             <tr>
                 <td class="auto-style4">Bölüm Seçiniz:</td>
@@ -126,7 +126,9 @@
                 <td class="auto-style3">
                     <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:con_PMTP %>" SelectCommand="SELECT [Bolum_ID], [Bolum_Adi] FROM [tbl_Bolumler]"></asp:SqlDataSource>
                 </td>
-                <td>&nbsp;</td>
+                <td>
+                    <asp:Button ID="Button1" runat="server" BackColor="#CC3300" Font-Bold="True" Font-Size="X-Large" ForeColor="White" Height="37px" OnClientClick="window.close();" Text="Formu Kapat" Width="168px" style="cursor: pointer;"/>
+                </td>
             </tr>
             <tr>
                 <td class="auto-style3">

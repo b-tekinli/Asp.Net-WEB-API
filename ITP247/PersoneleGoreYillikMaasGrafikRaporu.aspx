@@ -28,9 +28,14 @@
             <tr>
                 <td>
                     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                    <asp:Chart ID="Chart1" runat="server" DataSourceID="SqlDataSource1" OnLoad="Chart1_Load" Width="681px" Height="367px">
+                    </td>
+                <td>&nbsp;</td>
+            </tr>
+            <tr>
+                <td>
+                    <asp:Chart ID="Chart1" runat="server" DataSourceID="SqlDataSource1" Height="414px" Width="794px">
                         <series>
-                            <asp:Series Name="Series1" XValueMember="Pers_Isim" YValueMembers="Toplam">
+                            <asp:Series Name="Series1" XValueMember="Pers_Isim" YValueMembers="Maas_Toplam">
                             </asp:Series>
                         </series>
                         <chartareas>
@@ -42,12 +47,9 @@
                 <td>&nbsp;</td>
             </tr>
             <tr>
-                <td>&nbsp;</td>
-                <td>&nbsp;</td>
-            </tr>
-            <tr>
                 <td>
-                    <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:con_PMTP %>" SelectCommand="SELECT tbl_Personeller.Pers_Isim, tbl_PersonelMaaslari.Maas_Toplam AS Toplam, tbl_PersonelMaaslari.Maas_Yili FROM tbl_Personeller INNER JOIN tbl_PersonelMaaslari ON tbl_Personeller.Pers_ID = tbl_PersonelMaaslari.Pers_ID AND tbl_Personeller.Pers_ID = tbl_PersonelMaaslari.Pers_ID AND tbl_Personeller.Pers_ID = tbl_PersonelMaaslari.Pers_ID"></asp:SqlDataSource>
+                    <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:con_PMTP %>" SelectCommand="SELECT tbl_PersonelMaaslari.Maas_Toplam, tbl_PersonelMaaslari.Maas_Yili, tbl_Personeller.Pers_Isim FROM tbl_PersonelMaaslari INNER JOIN tbl_Personeller ON tbl_PersonelMaaslari.Pers_ID = tbl_Personeller.Pers_ID"></asp:SqlDataSource>
+                    <asp:Button ID="Button1" runat="server" BackColor="#CC3300" Font-Bold="True" Font-Size="X-Large" ForeColor="White" Height="37px" OnClientClick="window.close();" Text="Formu Kapat" Width="168px" style="cursor: pointer;"/>
                 </td>
                 <td>&nbsp;</td>
             </tr>

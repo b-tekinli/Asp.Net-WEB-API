@@ -44,6 +44,15 @@
                     &nbsp;</td>
             </tr>
             <tr>
+                <td class="auto-style5">Ay ID:</td>
+                <td class="auto-style4">
+                    <asp:DropDownList ID="DropDownList3" runat="server" AutoPostBack="True" DataSourceID="SqlDataSource4" DataTextField="Ay_Adi" DataValueField="Kategori_ID" Height="16px" Width="114px">
+                    </asp:DropDownList>
+                </td>
+                <td>
+                    &nbsp;</td>
+            </tr>
+            <tr>
                 <td class="auto-style5">Maaş Ödeme Tarihi:</td>
                 <td class="auto-style4">
                     <asp:TextBox ID="TextBox1" runat="server" TextMode="Date"></asp:TextBox>
@@ -75,7 +84,7 @@
                     <asp:Label ID="Label1" runat="server" Text="Label" Visible="False" ForeColor="#FF6600"></asp:Label>
                 </td>
                 <td>
-                    <asp:Button ID="Button2" runat="server" Text="FORMU KAPAT" Width="125px" OnClientClick="window.close()" BackColor="#FF3300" Font-Bold="True" ForeColor="White" Height="33px" />
+                    <asp:Button ID="Button2" runat="server" BackColor="#CC3300" Font-Bold="True" Font-Size="X-Large" ForeColor="White" Height="37px" OnClientClick="window.close();" Text="Formu Kapat" Width="168px" style="cursor: pointer;"/>
                 </td>
             </tr>
         </table>
@@ -98,6 +107,7 @@ WHERE PersonelMaaslari=@PersonelMaaslari">
                     <asp:Parameter Name="PersonelMaaslari" />
                 </UpdateParameters>
             </asp:SqlDataSource>
+            <asp:SqlDataSource ID="SqlDataSource4" runat="server" ConnectionString="<%$ ConnectionStrings:con_PMTP %>" SelectCommand="SELECT [Ay_Adi], [Kategori_ID] FROM [tbl_Kategoriler]"></asp:SqlDataSource>
         </div>
     </form>
 </body>
