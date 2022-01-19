@@ -24,6 +24,13 @@
         .auto-style5 {
             font-size: large;
         }
+        .auto-style6 {
+            text-align: center;
+            height: 255px;
+        }
+        .auto-style7 {
+            height: 255px;
+        }
     </style>
 </head>
 <body style="display: flex; justify-content: center;">
@@ -48,7 +55,7 @@
                 <td>&nbsp;</td>
             </tr>
             <tr>
-                <td class="auto-style3">
+                <td class="auto-style6">
                     <asp:GridView ID="GridView1" runat="server" AllowPaging="True" AllowSorting="True" AutoGenerateColumns="False" DataSourceID="SqlDataSource1" CellPadding="4" ForeColor="#333333" GridLines="None" Height="317px" Width="1210px">
                         <AlternatingRowStyle BackColor="White" />
                         <Columns>
@@ -78,7 +85,7 @@
                         <SortedDescendingHeaderStyle BackColor="#15524A" />
                     </asp:GridView>
                 </td>
-                <td>&nbsp;</td>
+                <td class="auto-style7"></td>
             </tr>
             <tr>
                 <td>

@@ -43,9 +43,9 @@
                 <td class="auto-style2" colspan="2"><strong>Maaş Veri Güncelleme Formu</strong></td>
             </tr>
             <tr>
-                <td class="auto-style4">Bölüm Seçiniz:</td>
+                <td class="auto-style4">Personel Seçiniz:</td>
                 <td class="auto-style5">
-                    <asp:DropDownList ID="DropDownList1" runat="server" AutoPostBack="True" DataSourceID="SqlDataSource1" DataTextField="Bolum_Adi" DataValueField="Bolum_ID" Height="25px" Width="105px">
+                    <asp:DropDownList ID="DropDownList1" runat="server" AutoPostBack="True" DataSourceID="SqlDataSource1" DataTextField="Pers_Isim" DataValueField="Pers_ID" Height="25px" Width="105px">
                     </asp:DropDownList>
                 </td>
             </tr>
@@ -124,7 +124,7 @@
             </tr>
             <tr>
                 <td class="auto-style3">
-                    <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:con_PMTP %>" SelectCommand="SELECT [Bolum_ID], [Bolum_Adi] FROM [tbl_Bolumler]"></asp:SqlDataSource>
+                    <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:con_PMTP %>" SelectCommand="SELECT [Pers_ID], [Pers_Isim] FROM [tbl_Personeller]"></asp:SqlDataSource>
                 </td>
                 <td>
                     <asp:Button ID="Button1" runat="server" BackColor="#CC3300" Font-Bold="True" Font-Size="X-Large" ForeColor="White" Height="37px" OnClientClick="window.close();" Text="Formu Kapat" Width="168px" style="cursor: pointer;"/>
