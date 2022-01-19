@@ -60,7 +60,7 @@
                         <asp:GridView ID="GridView1" runat="server" AllowSorting="True" AutoGenerateColumns="False" DataKeyNames="Bolum_ID" DataSourceID="SqlDataSource1" CellPadding="4" ForeColor="#333333" GridLines="None" Width="678px" CssClass="auto-style4" Height="244px">
                             <AlternatingRowStyle BackColor="White" />
                             <Columns>
-                                <asp:CommandField ShowDeleteButton="True" ShowEditButton="True" />
+                                <asp:CommandField ShowDeleteButton="True" ShowEditButton="True" ShowSelectButton="True" />
                                 <asp:BoundField DataField="Bolum_ID" HeaderText="ID" InsertVisible="False" ReadOnly="True" SortExpression="Bolum_ID" />
                                 <asp:BoundField DataField="Bolum_Adi" HeaderText="Bölüm" SortExpression="Bolum_Adi" />
                                 <asp:BoundField DataField="Bolum_Tel" HeaderText="Tel" SortExpression="Bolum_Tel" />
