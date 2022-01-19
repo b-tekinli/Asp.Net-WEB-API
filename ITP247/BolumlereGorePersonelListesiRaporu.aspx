@@ -12,14 +12,7 @@
         .auto-style2 {
             font-size: xx-large;
             text-align: center;
-        }
-        .auto-style3 {
-            text-align: center;
-        }
-        .auto-style4 {
-            font-size: xx-large;
-            text-align: center;
-            height: 24px;
+            height: 14px;
         }
         .auto-style5 {
             font-size: large;
@@ -27,9 +20,13 @@
         .auto-style6 {
             text-align: center;
             height: 255px;
+            width: 1157px;
         }
         .auto-style7 {
             height: 255px;
+        }
+        .auto-style8 {
+            width: 1157px;
         }
     </style>
 </head>
@@ -40,23 +37,12 @@
                 <td class="auto-style2" style="color: forestgreen;" colspan="2"><strong>Bölümlere Göre Personel Listesi Raporu</strong></td>
             </tr>
             <tr>
-                <td class="auto-style4" style="color: forestgreen;" colspan="2"></td>
-            </tr>
-            <tr>
-                <td class="auto-style3"><span class="auto-style5">Bölüm Adı:
+                <td class="auto-style6">
+                    <span class="auto-style5">Bölüm Adı:
                     </span>
                     <asp:DropDownList ID="DropDownList1" runat="server" AutoPostBack="True" DataSourceID="SqlDataSource2" DataTextField="Bolum_Adi" DataValueField="Bolum_ID" Height="31px" Width="145px">
                     </asp:DropDownList>
-                </td>
-                <td>&nbsp;</td>
-            </tr>
-            <tr>
-                <td class="auto-style3">&nbsp;</td>
-                <td>&nbsp;</td>
-            </tr>
-            <tr>
-                <td class="auto-style6">
-                    <asp:GridView ID="GridView1" runat="server" AllowPaging="True" AllowSorting="True" AutoGenerateColumns="False" DataSourceID="SqlDataSource1" CellPadding="4" ForeColor="#333333" GridLines="None" Height="317px" Width="1210px">
+                    <asp:GridView ID="GridView1" runat="server" AllowPaging="True" AllowSorting="True" AutoGenerateColumns="False" DataSourceID="SqlDataSource1" CellPadding="4" ForeColor="#333333" GridLines="None" Height="16px" Width="1117px">
                         <AlternatingRowStyle BackColor="White" />
                         <Columns>
                             <asp:BoundField DataField="Pers_ID" HeaderText="ID" SortExpression="Pers_ID" />
@@ -84,23 +70,23 @@
                         <SortedDescendingCellStyle BackColor="#D4DFE1" />
                         <SortedDescendingHeaderStyle BackColor="#15524A" />
                     </asp:GridView>
+                    <asp:Button ID="Button1" runat="server" BackColor="#CC3300" Font-Bold="True" Font-Size="X-Large" ForeColor="White" Height="37px" OnClientClick="window.close();" Text="Formu Kapat" Width="168px" style="cursor: pointer;"/>
                 </td>
                 <td class="auto-style7"></td>
             </tr>
             <tr>
-                <td>
-                    <asp:SqlDataSource ID="SqlDataSource2" runat="server" ConnectionString="<%$ ConnectionStrings:con_PMTP %>" SelectCommand="SELECT [Bolum_ID], [Bolum_Adi] FROM [tbl_Bolumler]"></asp:SqlDataSource>
-                    <asp:Button ID="Button1" runat="server" BackColor="#CC3300" Font-Bold="True" Font-Size="X-Large" ForeColor="White" Height="37px" OnClientClick="window.close();" Text="Formu Kapat" Width="168px" style="cursor: pointer;"/>
-                </td>
+                <td class="auto-style8">
+                    &nbsp;</td>
                 <td>&nbsp;</td>
             </tr>
             <tr>
-                <td>
+                <td class="auto-style8">
                     <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:con_PMTP %>" SelectCommand="SELECT * FROM [vw_PersonellerListesi] WHERE Bolum_ID = @Bolum_ID">
                         <SelectParameters>
                             <asp:ControlParameter ControlID="DropDownList1" Name="Bolum_ID" PropertyName="SelectedValue" />
                         </SelectParameters>
                     </asp:SqlDataSource>
+                    <asp:SqlDataSource ID="SqlDataSource2" runat="server" ConnectionString="<%$ ConnectionStrings:con_PMTP %>" SelectCommand="SELECT [Bolum_ID], [Bolum_Adi] FROM [tbl_Bolumler]"></asp:SqlDataSource>
                 </td>
                 <td>&nbsp;</td>
             </tr>
