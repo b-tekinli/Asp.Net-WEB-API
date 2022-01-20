@@ -42,6 +42,9 @@
         .auto-style9 {
             color: #FF6600;
         }
+        .auto-style10 {
+            cursor: pointer;
+        }
     </style>
 </head>
 <body>
@@ -86,8 +89,8 @@
                 </tr>
                 <tr>
                     <td class="auto-style6">
-                        <asp:Button ID="Button1" runat="server" BackColor="#339933" CssClass="auto-style5" Font-Bold="True" Font-Size="X-Large" ForeColor="White" Height="37px" Text="Veri Giriş Formunu Aç" Width="227px" OnClick="Button1_Click" OnClientClick="target='_blank';" PostBackUrl="~/PersonelVeriGirisFormu.aspx" />
-                    <asp:Button ID="Button2" runat="server" BackColor="#CC3300" Font-Bold="True" Font-Size="X-Large" ForeColor="White" Height="37px" OnClientClick="window.close();" Text="Formu Kapat" Width="168px" style="cursor: pointer;" OnClick="Button2_Click"/>
+                        <asp:Button ID="Button1" runat="server" BackColor="#339933" CssClass="auto-style5" Font-Bold="True" Font-Size="X-Large" ForeColor="White" Height="37px" Text="Veri Giriş Formunu Aç" Width="322px" OnClick="Button1_Click" OnClientClick="target='_blank';" PostBackUrl="~/PersonelVeriGirisFormu.aspx" />
+                    <asp:Button ID="Button2" runat="server" BackColor="#CC3300" Font-Bold="True" Font-Size="X-Large" ForeColor="White" Height="37px" OnClientClick="window.close();" Text="Formu Kapat" Width="198px" OnClick="Button2_Click" CssClass="auto-style10"/>
                     </td>
                     <td>&nbsp;</td>
                 </tr>
@@ -118,7 +121,7 @@
                 </tr>
                 <tr>
                     <td class="auto-style6">
-                    <asp:Button ID="Button3" runat="server" BackColor="#339966" Font-Bold="True" Font-Size="X-Large" ForeColor="White" Height="37px" Text="Verileri Kaydet" Width="168px" style="cursor: pointer;" OnClick="Button3_Click"/>
+                    <asp:Button ID="Button3" runat="server" BackColor="#339966" Font-Bold="True" Font-Size="X-Large" ForeColor="White" Height="37px" Text="Verileri Kaydet" Width="213px" OnClick="Button3_Click" CssClass="auto-style10"/>
                         <asp:Label ID="lbl1" runat="server" Text="Label" Visible="False" CssClass="auto-style9"></asp:Label>
                     </td>
                     <td>&nbsp;</td>
